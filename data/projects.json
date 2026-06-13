@@ -144,6 +144,33 @@
       "description": "StoreLink helps small-scale merchants structure their catalogs. Merchants enter text or upload product images, and the built-in AI assistant automatically generates descriptions, categorizes items, and builds a mini sales page with direct checkout links.",
       "result": "Successfully launched MVP for local retail merchants, generating over 1,500 transactional links",
       "category": "web-saas"
+    },
+    {
+      "shortDescription": "Premium audio-centric wellness app. Features 4-channel sound mixing, 3D spatial studio, and haptic-guided breathwork for sleep and productivity.",
+      "deliveryTime": "Built in 21 days",
+      "method": "Performance-First, User-Centric Design",
+      "metrics": {
+        "m1_key": "Audio Mixing Capability",
+        "m1_val": "4-Channel Simultaneous",
+        "m2_key": "User Monetization Model",
+        "m2_val": "100% One-Time Purchase",
+        "m3_key": "Performance Stability",
+        "m3_val": "Zero Subscription Churn"
+      },
+      "liveUrl": "https://zenbird.web.id",
+      "techStack": [
+        "Flutter (Dart)",
+        "Firebase Firestore",
+        "Just_Audio",
+        "Google Play Billing"
+      ],
+      "categoryLabel": "Android App",
+      "title": "ZenBird: Premium Nature Sounds & Wellness",
+      "id": "zenbird",
+      "image": "/assets/uploads/banner-zenbird-untuk-ardyan-dev.png",
+      "description": "A sophisticated Flutter-based wellness application engineered for immersive audio experiences. Built with just_audio and custom audio_service implementations to support high-fidelity multi-channel mixing, allowing users to layer ambient soundscapes with granular volume control. Features a 3D Spatial Studio for psychoacoustic sound positioning, synchronized haptic-visual breathwork, and Pomodoro-based Deep Focus timers. Optimized with advanced caching mechanisms for seamless content delivery and a clean, subscription-free \"lifetime\" monetization model via Google Play Billing",
+      "result": "Successfully launched with lifetime-access value proposition, resulting in high organic user retention and 5-star feedback on spatial audio quality.",
+      "category": "android"
     }
   ]
 }
