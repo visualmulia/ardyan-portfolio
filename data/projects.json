@@ -171,6 +171,34 @@
       "description": "A sophisticated Flutter-based wellness application engineered for immersive audio experiences. Built with just_audio and custom audio_service implementations to support high-fidelity multi-channel mixing, allowing users to layer ambient soundscapes with granular volume control. Features a 3D Spatial Studio for psychoacoustic sound positioning, synchronized haptic-visual breathwork, and Pomodoro-based Deep Focus timers. Optimized with advanced caching mechanisms for seamless content delivery and a clean, subscription-free \"lifetime\" monetization model via Google Play Billing",
       "result": "Successfully launched with lifetime-access value proposition, resulting in high organic user retention and 5-star feedback on spatial audio quality.",
       "category": "android"
+    },
+    {
+      "shortDescription": "The ultimate marketplace for reptile enthusiasts. Featuring secure real-time bidding, integrated payment gateways, and community-driven auction events.",
+      "deliveryTime": "Built in 45 days",
+      "method": "Agile, Cloud-Native Architecture",
+      "metrics": {
+        "m1_key": "Auction Real-Time Sync",
+        "m1_val": "< 200ms latency",
+        "m2_key": "User Acquisition",
+        "m2_val": "Community-driven growth",
+        "m3_key": "Platform Security",
+        "m3_val": "Firebase Authenticated"
+      },
+      "liveUrl": "https://play.google.com/store/apps/details?id=com.morphbid.app&pcampaignid=web_share",
+      "techStack": [
+        "Flutter (Dart",
+        "Firebase Firestore",
+        "Cloudinary",
+        "Google Mobile Ads & IAP",
+        "Cloud Functions"
+      ],
+      "categoryLabel": "Android App",
+      "title": "MorphBid: Indonesia's #1 Reptile Auction Platform",
+      "id": "morphbid",
+      "image": "/assets/uploads/banner-morphbid-untuk-ardyan-dev.png",
+      "description": "A comprehensive, scalable mobile auction ecosystem designed for the Indonesian reptile community. Built with Flutter, the platform utilizes Firebase Firestore and Cloud Functions to deliver low-latency real-time bidding updates  . It integrates advanced image processing via Cloudinary for high-quality pet cataloging, secure user authentication through Google Sign-In, and a robust notification system powered by Firebase Messaging  . The architecture is optimized for performance, featuring secure in-app purchasing and geolocator-based event tracking for local auctions.",
+      "result": "Successfully granted production access on Google Play, facilitating secure community auctions with high-performance real-time data handling",
+      "category": "android"
     }
   ]
 }
