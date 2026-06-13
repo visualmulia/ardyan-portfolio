@@ -1,33 +1,32 @@
 {
   "items": [
     {
-      "shortDescription": "End-to-end property dashboard managing tenant billing, automated invoice distribution, and maintenance requests.",
-      "deliveryTime": "Built in 14 days",
-      "method": "AI-Assisted, Human-Validated",
+      "shortDescription": "High-performance logistics management platform. Featuring real-time operational tracking, automated documentation (PDF), and integrated secure payment processing.",
+      "deliveryTime": "Built in 21 days",
+      "method": "Modular Web Architecture, Performance-Centric",
       "metrics": {
-        "m1_key": "Occupancy Rate",
-        "m1_val": "98% Occupied",
-        "m2_key": "Invoice Automation",
-        "m2_val": "100% Automated",
-        "m3_key": "Payment Matching",
-        "m3_val": "< 5 seconds"
+        "m1_key": "Document Generation Speed",
+        "m1_val": "< 200ms (Auto-PDF)",
+        "m2_key": "Transaction Reliability",
+        "m2_val": "Midtrans Secure Integration",
+        "m3_key": "Operational Monitoring",
+        "m3_val": "Sentry-Tracked Uptime"
       },
-      "liveUrl": "#",
+      "liveUrl": "https://www.logis-app.web.id/",
       "githubUrl": "#",
       "techStack": [
-        "Next.js",
-        "Node.js",
-        "PostgreSQL",
-        "TailwindCSS",
-        "PDFKit",
-        "Sentry"
+        "Next.js 16 (App Router)",
+        "Firebase & Firebase-Admin",
+        "Tailwind CSS & Radix UI",
+        "Midtrans Client",
+        "jsPDF & html2canvas"
       ],
       "categoryLabel": "SaaS & Web App",
-      "title": "Property Management System (PMS)",
-      "id": "pms",
-      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
-      "description": "A comprehensive SaaS platform designed for property managers to handle leases, track occupancy rates, and automate financial reports. Features include automated PDF invoice generation, integration with local payment systems, and tenant complaint ticketing pipelines.",
-      "result": "120+ units managed, rent collection efficiency increased by 40%",
+      "title": "Logis: Smart Logistics & Operational Management SaaS",
+      "id": "logis",
+      "image": "/assets/uploads/cover-thumbnail-logis.png",
+      "description": "A modern, scalable SaaS platform engineered with Next.js 16 and TypeScript to streamline logistics and operational workflows. The architecture leverages Firebase for real-time data synchronization and Midtrans for secure, automated transaction processing. It features sophisticated on-the-fly document generation (PDF/AutoTable), responsive UI components via Radix-UI and Tailwind CSS, and robust observability through Sentry integration. Built to handle complex business processes with high reliability, ensuring seamless performance across enterprise operations",
+      "result": "Deployed as a robust SaaS tool, significantly reducing manual document processing time and enhancing operational visibility for logistics management.",
       "category": "web-saas"
     },
     {
