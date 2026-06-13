@@ -5,9 +5,8 @@ backend:
   name: github
   repo: visualmulia/ardyan-portfolio
   branch: main
-  # Zero-configuration hosting: If base_url is omitted, Decap CMS will look for a GitHub 
-  # personal access token to edit files. This is perfect for single developers.
-  # To enable normal click-to-login, deploy a simple OAuth gate or link your site via Netlify Gateway.
+  base_url: https://ardyan.dev
+  auth_endpoint: api/auth
 
 media_folder: assets/uploads
 public_folder: /assets/uploads
