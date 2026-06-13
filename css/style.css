@@ -291,22 +291,12 @@ nav ul li a:hover {
     width: 100%;
 }
 
-.hero-badges-left, .hero-badges-right {
-    position: absolute;
+.hero-badges-row {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 16px;
+    margin-bottom: 24px;
     z-index: 5;
-}
-
-.hero-badges-left {
-    left: 5%;
-    top: 25%;
-}
-
-.hero-badges-right {
-    right: 5%;
-    top: 25%;
 }
 
 .hero-badge-widget {
@@ -1448,13 +1438,9 @@ footer {
         padding: 80px 0;
     }
 
-    .hero-badges-left, .hero-badges-right {
-        position: static;
-        flex-direction: row;
+    .hero-badges-row {
         flex-wrap: wrap;
-        justify-content: center;
         gap: 12px;
-        margin-bottom: 24px;
     }
 
     .hero-main {
