@@ -110,7 +110,7 @@
       ],
       "categoryLabel": "Android App",
       "title": "Raja Gacor: No. 1 Bird Song Training & Competition App",
-      "id": "android-app",
+      "id": "rajagacor",
       "image": "/assets/uploads/banner-lp.png",
       "description": "A highly-optimized native Android application built with Flutter, tailored for the vibrant bird-hobbyist community in Indonesia. The app delivers high-fidelity audio training (masteran) leveraging a custom implementation of just_audio and audio_service for uninterrupted background playback. \n\nIt features live bird competition discovery integrated with real-time Firestore synchronization, device geolocating for local event tracking, and deep-linking capabilities via app_links to drive viral user acquisition. Engineered with robust offline state management using SharedPreferences, secure OAuth2 authentications, and optimized data models to ensure seamless operation under weak cellular connectivity.",
       "result": "Successfully published on Google Play Store with functional hybrid monetization (AdMob + In-App Purchases) and active automated update integration.",
