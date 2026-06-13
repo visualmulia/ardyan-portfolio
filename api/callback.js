@@ -50,7 +50,7 @@ export default async function handler(req, res) {
           const receiveMessage = (e) => {
             window.opener.postMessage(
               'authorization:${provider}:success:${JSON.stringify({ token, provider })}',
-              e.origin
+              '*'
             );
             window.removeEventListener('message', receiveMessage, false);
           };

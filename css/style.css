@@ -720,6 +720,11 @@ nav ul li a:hover {
     border-color: var(--color-accent);
 }
 
+.custom-select-wrapper select option {
+    background-color: #0d1321;
+    color: #ffffff;
+}
+
 .custom-select-wrapper::after {
     content: '\f078';
     font-family: 'Font Awesome 6 Free';
