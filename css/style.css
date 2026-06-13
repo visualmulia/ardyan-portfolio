@@ -1582,6 +1582,34 @@ footer {
     margin-bottom: 24px;
 }
 
+.modal-delivery-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--color-dark-border);
+    padding: 16px 20px;
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+.modal-delivery-card .modal-metric-lbl {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--color-text-muted-light);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.modal-delivery-card .modal-metric-val {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-accent);
+    line-height: 1.5;
+    text-align: left;
+}
+
+
 /* Process Section & Timeline */
 .process-timeline {
     display: grid;

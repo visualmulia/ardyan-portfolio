@@ -245,15 +245,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const deliveryContainer = document.getElementById('modal-delivery-detail');
         if (deliveryContainer) {
             deliveryContainer.innerHTML = `
-                <div class="modal-metric-card">
+                <div class="modal-delivery-card">
                     <div class="modal-metric-lbl">Delivery Time</div>
                     <div class="modal-metric-val">${proj.deliveryTime || 'N/A'}</div>
                 </div>
-                <div class="modal-metric-card">
+                <div class="modal-delivery-card">
                     <div class="modal-metric-lbl">Methodology</div>
                     <div class="modal-metric-val">${proj.method || 'N/A'}</div>
                 </div>
-                <div class="modal-metric-card">
+                <div class="modal-delivery-card">
                     <div class="modal-metric-lbl">Outcome Result</div>
                     <div class="modal-metric-val">${proj.result || 'N/A'}</div>
                 </div>
