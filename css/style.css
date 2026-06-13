@@ -199,18 +199,22 @@ header .container {
 }
 
 .logo {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900;
     letter-spacing: -0.5px;
-    color: var(--color-text-dark);
+    background-color: var(--color-dark-bg);
+    color: var(--color-text-light) !important;
+    padding: 8px 18px;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: var(--transition-smooth);
 }
 
 .logo span {
     color: var(--color-accent);
-}
-
-.section-dark .logo, body.dark-header .logo {
-    color: var(--color-text-light);
 }
 
 nav ul {
@@ -1475,6 +1479,11 @@ footer {
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
+        z-index: 101;
+    }
+
+    .menu-toggle.active span {
+        background-color: var(--color-text-light) !important;
     }
 
     nav ul {

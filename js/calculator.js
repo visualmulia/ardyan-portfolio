@@ -140,7 +140,6 @@ function initCalculator() {
 
     // Add listeners
     projectTypeSelect.addEventListener('change', calculate);
-    featuresContainer.addEventListener('change', '.calc-feature-checkbox', calculate);
     // Bind change event to checkboxes inside container
     featuresContainer.addEventListener('change', (e) => {
         if (e.target && e.target.classList.contains('calc-feature-checkbox')) {
