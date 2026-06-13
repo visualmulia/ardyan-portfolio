@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium portfolio of Ardyan, a Full-Stack Developer & Automation Specialist. Custom Web Apps, Android Apps, Scraping Bot automations, and scalable SaaS solutions.">
+    <meta name="keywords" content="Ardyan, Web Developer, Android Developer, Automation, Web Scraper, SaaS Developer, Indonesia, ardyan.dev">
+    <meta name="author" content="Ardyan">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ardyan.dev/">
+    <meta property="og:title" content="Ardyan | Full-Stack Developer & Automation Specialist">
+    <meta property="og:description" content="Premium web applications, native Android apps, and high-performance automation scripts built by Ardyan.">
+    <meta property="og:image" content="assets/developer_portrait.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ardyan.dev/">
+    <meta property="twitter:title" content="Ardyan | Full-Stack Developer & Automation Specialist">
+    <meta property="twitter:description" content="Premium web applications, native Android apps, and high-performance automation scripts built by Ardyan.">
+
+    <title>Ardyan | Full-Stack Developer & Automation Specialist</title>
+
+    <!-- FontAwesome & Icon Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- Subtle Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Background Glows -->
+    <div class="cursor-glow" id="custom-cursor-glow"></div>
+
+    <!-- Header / Navbar -->
+    <header id="main-header">
+        <div class="container">
+            <a href="#" class="logo" id="logo-link">
+                &lt;A/&gt; ardyan<span>.dev</span>
+            </a>
+            
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="#about" id="nav-about-link">About</a></li>
+                    <li><a href="#services" id="nav-services-link">Services</a></li>
+                    <li><a href="#portfolio" id="nav-portfolio-link">Portfolio</a></li>
+                    <li><a href="#calculator" id="nav-calculator-link">Calculator</a></li>
+                    <li><a href="#faq" id="nav-faq-link">FAQ</a></li>
+                    <li><a href="#contact" class="btn btn-primary nav-cta" id="nav-cta-talk">Let's Talk</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="hero">
+            <div class="container hero-main">
+                <!-- Floating Badges (Left) -->
+                <div class="hero-badges-left reveal">
+                    <div class="hero-badge-widget">
+                        <i class="fas fa-users"></i>
+                        <span>Loved by 50+ Clients</span>
+                    </div>
+                    <div class="hero-badge-widget">
+                        <i class="fas fa-check-double"></i>
+                        <span>100% Satisfaction</span>
+                    </div>
+                </div>
+
+                <!-- Main Headline and Copy -->
+                <div class="hero-title-container reveal delay-100">
+                    <h1>GET YOU - <span class="pill-badge">SOFTWARE</span> DEVELOPER</h1>
+                </div>
+                
+                <p class="hero-desc reveal delay-200">
+                    I engineer modern web dashboards, native Android apps, and high-speed scraping bots to automate your operations and scale your revenue.
+                </p>
+
+                <div class="hero-actions reveal delay-200">
+                    <a href="#portfolio" class="btn btn-primary" id="hero-cta-work">
+                        Explore Works <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#calculator" class="btn btn-secondary" id="hero-cta-estimate">
+                        Estimate Cost
+                    </a>
+                </div>
+
+                <!-- Floating Badges (Right) -->
+                <div class="hero-badges-right reveal">
+                    <div class="hero-badge-widget">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                    <div class="hero-badge-widget">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Systems</span>
+                    </div>
+                </div>
+
+                <!-- Hero Cutout Portrait -->
+                <div class="hero-image-frame reveal delay-300">
+                    <img src="assets/developer_portrait.png" alt="Ardyan - Professional Software Developer">
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Scrolling Ticker Marquee -->
+        <div class="marquee-container" id="marquee-ticker">
+            <div class="marquee-content">
+                <div class="marquee-item">NEXT.JS <span>//</span></div>
+                <div class="marquee-item">KOTLIN <span>//</span></div>
+                <div class="marquee-item">DOCKER <span>//</span></div>
+                <div class="marquee-item">SELENIUM <span>//</span></div>
+                <div class="marquee-item">PYTHON <span>//</span></div>
+                <div class="marquee-item">SAAS PLATFORMS <span>//</span></div>
+                <div class="marquee-item">API INTEGRATIONS <span>//</span></div>
+                <div class="marquee-item">ANDROID NATIVE <span>//</span></div>
+                <!-- Duplicate for loop seamless transition -->
+                <div class="marquee-item">NEXT.JS <span>//</span></div>
+                <div class="marquee-item">KOTLIN <span>//</span></div>
+                <div class="marquee-item">DOCKER <span>//</span></div>
+                <div class="marquee-item">SELENIUM <span>//</span></div>
+                <div class="marquee-item">PYTHON <span>//</span></div>
+                <div class="marquee-item">SAAS PLATFORMS <span>//</span></div>
+                <div class="marquee-item">API INTEGRATIONS <span>//</span></div>
+                <div class="marquee-item">ANDROID NATIVE <span>//</span></div>
+            </div>
+        </div>
+
+        <!-- Experience / Stats Section (Dark Section) -->
+        <section id="about" class="section-dark reveal">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <span class="sub">My Experience</span>
+                    <h2>Proven Business Growth & Uptime</h2>
+                </div>
+                
+                <div class="experience-grid">
+                    <div class="exp-card">
+                        <span class="exp-num">5+</span>
+                        <span class="exp-label">Years Experience</span>
+                    </div>
+                    <div class="exp-card">
+                        <span class="exp-num">50+</span>
+                        <span class="exp-label">Projects Completed</span>
+                    </div>
+                    <div class="exp-card">
+                        <span class="exp-num">99.9%</span>
+                        <span class="exp-label">Automation Uptime</span>
+                    </div>
+                    <div class="exp-card">
+                        <span class="exp-num">10k+</span>
+                        <span class="exp-label">Development Hours</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tailored Solutions / Services (Dark Section) -->
+        <section id="services" class="section-dark reveal">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 72px;">
+                    <span class="sub">What I Offer</span>
+                    <h2>Tailored Software Solutions To Scale</h2>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1: Web Apps -->
+                    <div class="service-card" id="service-web">
+                        <div class="service-card-top">
+                            <i class="fas fa-laptop-code"></i>
+                            <h3>Web Dev & Landing Pages</h3>
+                            <p>Stunning, responsive landing pages and fast-loading dashboards built to convert traffic into sales pipelines.</p>
+                        </div>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check"></i> SEO Mobile Score: 100/100</li>
+                            <li><i class="fas fa-check"></i> React / Next.js Integration</li>
+                            <li><i class="fas fa-check"></i> Custom API Integrations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 2: Android native -->
+                    <div class="service-card" id="service-android">
+                        <div class="service-card-top">
+                            <i class="fab fa-android"></i>
+                            <h3>Android App Development</h3>
+                            <p>Offline-first native mobile platforms incorporating local SQLite caching, widget tools, and fluid Jetpack animations.</p>
+                        </div>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check"></i> Kotlin & SDK Development</li>
+                            <li><i class="fas fa-check"></i> Secure SQLite Encrypted Room</li>
+                            <li><i class="fas fa-check"></i> Local Background Syncing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Service 3: Automation -->
+                    <div class="service-card" id="service-automation">
+                        <div class="service-card-top">
+                            <i class="fas fa-robot"></i>
+                            <h3>Scraping & Automation Bots</h3>
+                            <p>Cloud-native web crawlers and scraping pipelines (Puppeteer/Selenium) to automate daily manual entry workflows.</p>
+                        </div>
+                        <ul class="service-features-list">
+                            <li><i class="fas fa-check"></i> Headless Browser Orchestration</li>
+                            <li><i class="fas fa-check"></i> CRM Webhook Sync (Discord/WA)</li>
+                            <li><i class="fas fa-check"></i> 24/7 Cloud Cron Schedules</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Showcase Section (Dark Section) -->
+        <section id="portfolio" class="section-dark reveal">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <span class="sub">Case Studies</span>
+                    <h2>Successful Projects Built & Launched</h2>
+                </div>
+
+                <!-- Dynamic tag filters -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all" id="btn-filter-all">All</button>
+                    <button class="filter-btn" data-filter="web-saas" id="btn-filter-web">Web & SaaS</button>
+                    <button class="filter-btn" data-filter="android" id="btn-filter-android">Android Apps</button>
+                    <button class="filter-btn" data-filter="automation" id="btn-filter-automation">Automation & Tools</button>
+                </div>
+
+                <!-- Grid wrapper for dynamic injection -->
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projects injected dynamically via projects.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Configurator / Cost Estimator (Dark Section) -->
+        <section id="calculator" class="section-dark reveal">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <span class="sub">Scope Configurator</span>
+                    <h2>Build Your Project & Estimate Budget</h2>
+                </div>
+
+                <div class="calculator-wrapper">
+                    <!-- Input configurator -->
+                    <div class="calc-inputs" id="calculator-form-container">
+                        <div class="calc-group">
+                            <label for="calc-project-type" class="group-label">Select Baseline Project Type</label>
+                            <div class="custom-select-wrapper">
+                                <select id="calc-project-type" name="calc-project-type">
+                                    <!-- Dynamic options -->
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="calc-group">
+                            <label class="group-label">Include Extra Features</label>
+                            <div class="features-checkbox-grid" id="calc-features-list">
+                                <!-- Dynamic checkboxes -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outcome Card -->
+                    <div class="calc-results-card" id="calculator-result-card">
+                        <div class="toggle-currency-container">
+                            <button class="currency-toggle-btn" id="currency-toggle">Switch to IDR (Rp)</button>
+                        </div>
+                        
+                        <div class="result-metric">
+                            <div class="result-label">Estimated Budget Range</div>
+                            <div class="result-value" id="calc-cost-range">$0 - $0</div>
+                        </div>
+
+                        <div class="result-timeline" id="calc-timeline">
+                            Est. Timeline: 0-0 Weeks
+                        </div>
+
+                        <button class="btn btn-primary" style="width: 100%; justify-content: center;" id="calc-book-btn">
+                            <i class="fas fa-calendar-check"></i> Book This Configuration
+                        </button>
+
+                        <p class="calc-disclaimer">*Note: Estimates are based on past project metrics. Final figures are scoped out in detail during our brief discovery chat.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FAQs Accordion Section (Light Section) -->
+        <section id="faq" class="section-light reveal">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <span class="sub">Questions & Answers</span>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-accordion-container">
+                    <!-- FAQ 1 -->
+                    <div class="faq-card" data-index="0">
+                        <div class="faq-header">
+                            <h3>How do you calculate the project pricing?</h3>
+                            <div class="faq-toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-body">
+                            <p>Pricing is based on estimated complexity, base technology (Landing page vs native App vs full-stack SaaS), and the specific integrations required (APIs, payment setup, databases). You can get an initial range using our interactive configurator above.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-card" data-index="1">
+                        <div class="faq-header">
+                            <h3>What is the typical project development timeline?</h3>
+                            <div class="faq-toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-body">
+                            <p>Simple landing pages are typically delivered within 1 week. Custom web applications, native Android apps, and SaaS dashboards generally range from 3 to 8 weeks depending on the size of the feature scope.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-card" data-index="2">
+                        <div class="faq-header">
+                            <h3>Do you offer revisions and ongoing maintenance?</h3>
+                            <div class="faq-toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-body">
+                            <p>Yes. All contracts include a standard 14-day QA window with unlimited iterations to fix layout issues. I also offer monthly support SLA retainers to update features, backup databases, and patch dependencies.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-card" data-index="3">
+                        <div class="faq-header">
+                            <h3>What are your primary communication channels?</h3>
+                            <div class="faq-toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-body">
+                            <p>I maintain transparent client communication. My active channels are WhatsApp (for quick chats and status updates), Email (for official proposals and files), and Slack/Discord (for developer collaboration pipelines).</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-card" data-index="4">
+                        <div class="faq-header">
+                            <h3>How do you guarantee 99.9% uptime for scrapers?</h3>
+                            <div class="faq-toggle-icon"><i class="fas fa-plus"></i></div>
+                        </div>
+                        <div class="faq-body">
+                            <p>I host automations on virtual private servers (VPS) managed by robust Docker containerization. Scrapers utilize automatic IP rotations via proxy services to prevent bans, and integrate heartbeat monitoring APIs to auto-restart and alert on errors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-Footer Banner (Dark Section) -->
+        <section class="section-dark" style="padding: 80px 0;">
+            <div class="container">
+                <div class="pre-footer-banner reveal">
+                    <h2>Transform Your Ideas Into High-Performance Digital Assets</h2>
+                    <a href="#contact" class="btn btn-primary">Start a Project <i class="fas fa-calendar-alt"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section & Footer (Dark Section) -->
+        <section id="contact" class="section-dark reveal">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- Info Column -->
+                    <div class="contact-info">
+                        <div class="contact-info-header">
+                            <h3>Let's build something extraordinary.</h3>
+                            <p>Whether you want a modern landing page, native Android app, automation bot, or database SaaS, get in touch today.</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="method-card">
+                                <div class="method-icon"><i class="fab fa-whatsapp"></i></div>
+                                <div>
+                                    <h5>WhatsApp Quickchat</h5>
+                                    <a href="https://wa.me/6281289653355" target="_blank" id="contact-wa-link">+62 812-8965-3355</a>
+                                </div>
+                            </div>
+
+                            <div class="method-card">
+                                <div class="method-icon"><i class="far fa-envelope"></i></div>
+                                <div>
+                                    <h5>Email Address</h5>
+                                    <a href="mailto:ardyan.permana@gmail.com" id="contact-email-link">ardyan.permana@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social links -->
+                        <div class="social-links">
+                            <a href="https://github.com" target="_blank" class="social-icon" id="contact-social-github" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com" target="_blank" class="social-icon" id="contact-social-linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Conversational Form Column -->
+                    <div class="contact-form-container">
+                        <form id="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contact-name">Your Name *</label>
+                                    <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contact-email">Email Address *</label>
+                                    <input type="email" id="contact-email" name="email" placeholder="john@company.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 32px;">
+                                <label for="contact-service">Service Requested</label>
+                                <div class="custom-select-wrapper">
+                                    <select id="contact-service" name="service">
+                                        <option value="web">Web Development & Landing Page</option>
+                                        <option value="android">Android Native Mobile App</option>
+                                        <option value="automation">Scraping & Automation Bot</option>
+                                        <option value="saas">SaaS & Custom Utilities</option>
+                                        <option value="other">Other Collaboration</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="contact-message">Project Description *</label>
+                                <textarea id="contact-message" name="message" placeholder="Provide detailed objectives, features required, or paste your calculator configuration..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;" id="contact-submit-btn">
+                                Send Proposal via WhatsApp <i class="fab fa-whatsapp"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo" id="footer-logo">
+                    &lt;A/&gt; ardyan<span>.dev</span>
+                </a>
+                <div class="footer-copyright">
+                    &copy; 2026 Ardyan. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="#about" id="footer-about">About</a>
+                    <a href="#services" id="footer-services">Services</a>
+                    <a href="#portfolio" id="footer-portfolio">Projects</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal (Overlay Backdrop) -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-content-wrapper">
+            <div class="modal-close-btn" id="modal-close">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="modal-hero-image" id="modal-img" style="background-image: url('')"></div>
+            <div class="modal-body">
+                <span class="modal-category" id="modal-cat-label">Category Label</span>
+                <h2 id="modal-title">Project Title Placeholder</h2>
+                
+                <div class="modal-info-columns">
+                    <!-- Description & details -->
+                    <div class="modal-text-desc">
+                        <h4>Project Overview</h4>
+                        <p id="modal-desc">Detailed overview here...</p>
+                        
+                        <div class="modal-action-links">
+                            <a href="#" target="_blank" class="btn btn-primary" id="modal-live-link">
+                                <i class="fas fa-external-link-alt"></i> Visit Project
+                            </a>
+                            <a href="#" target="_blank" class="btn btn-secondary" id="modal-git-link">
+                                <i class="fab fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar tech specs -->
+                    <div class="modal-sidebar-details">
+                        <div>
+                            <h4 style="font-family: var(--font-heading); font-size: 11px; font-weight: 800; color: var(--color-accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Tech Stack</h4>
+                            <div class="modal-tech-list" id="modal-tech">
+                                <!-- Tags injected dynamically -->
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 style="font-family: var(--font-heading); font-size: 11px; font-weight: 800; color: var(--color-accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;">Impact Metrics</h4>
+                            <div class="modal-metrics-vertical" id="modal-metrics-detail">
+                                <!-- Metrics injected dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- External CDNs & Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <!-- Custom Portfolio & Calculator Scripts -->
+    <script src="js/calculator.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

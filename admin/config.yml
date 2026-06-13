@@ -1,0 +1,48 @@
+# Decap CMS Configuration (Git-Based)
+# Learn more at https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: visualmulia/ardyan-portfolio
+  branch: main
+  # Zero-configuration hosting: If base_url is omitted, Decap CMS will look for a GitHub 
+  # personal access token to edit files. This is perfect for single developers.
+  # To enable normal click-to-login, deploy a simple OAuth gate or link your site via Netlify Gateway.
+
+media_folder: assets/uploads
+public_folder: /assets/uploads
+
+collections:
+  - name: "projects_collection"
+    label: "Portfolio Management"
+    files:
+      - file: "data/projects.json"
+        name: "projects"
+        label: "Portfolio Projects List"
+        format: "json"
+        fields:
+          - name: "items"
+            label: "Projects"
+            label_singular: "Project"
+            widget: "list"
+            fields:
+              - { label: "Project ID (slug)", name: "id", widget: "string", hint: "Unique lowercase identifier (e.g., auramart)" }
+              - { label: "Project Title", name: "title", widget: "string" }
+              - { label: "Category Key", name: "category", widget: "select", options: [{label: "SaaS & Web App", value: "web-saas"}, {label: "Android App", value: "android"}, {label: "Automation & Tool", value: "automation"}] }
+              - { label: "Category Label (Visible)", name: "categoryLabel", widget: "string", hint: "e.g., SaaS & Web App" }
+              - { label: "Short Card Description", name: "shortDescription", widget: "string" }
+              - { label: "Detailed Description (Modal)", name: "description", widget: "text" }
+              - { label: "Project Image", name: "image", widget: "image" }
+              - { label: "Tech Stack Tags", name: "techStack", widget: "list", field: { label: "Tech Tag", name: "tech", widget: "string" } }
+              - label: "Business Impact Metrics"
+                name: "metrics"
+                widget: "object"
+                fields:
+                  - { label: "Metric 1 Title (e.g., Checkout Speed)", name: "m1_key", widget: "string" }
+                  - { label: "Metric 1 Value (e.g., +140% Faster)", name: "m1_val", widget: "string" }
+                  - { label: "Metric 2 Title (e.g., Active Outlets)", name: "m2_key", widget: "string" }
+                  - { label: "Metric 2 Value (e.g., 15+ Stores)", name: "m2_val", widget: "string" }
+                  - { label: "Metric 3 Title (e.g., System Uptime)", name: "m3_key", widget: "string" }
+                  - { label: "Metric 3 Value (e.g., 99.99%)", name: "m3_val", widget: "string" }
+              - { label: "Live Demo URL", name: "liveUrl", widget: "string", required: false }
+              - { label: "GitHub URL", name: "githubUrl", widget: "string", required: false }
