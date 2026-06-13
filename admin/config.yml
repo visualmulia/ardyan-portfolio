@@ -45,3 +45,6 @@ collections:
                   - { label: "Metric 3 Value (e.g., 99.99%)", name: "m3_val", widget: "string" }
               - { label: "Live Demo URL", name: "liveUrl", widget: "string", required: false }
               - { label: "GitHub URL", name: "githubUrl", widget: "string", required: false }
+              - { label: "Delivery Time", name: "deliveryTime", widget: "string", hint: "e.g., Built in 14 days" }
+              - { label: "Methodology", name: "method", widget: "string", hint: "e.g., AI-Assisted, Human-Validated" }
+              - { label: "Outcome Result", name: "result", widget: "string", hint: "e.g., 15 stores onboarded, 0 downtime" }

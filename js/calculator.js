@@ -1,10 +1,8 @@
 const calculatorConfig = {
     projectTypes: {
-        landingpage: { name: "Premium Landing Page", basePriceUSD: 400, baseWeeks: 1 },
-        webapp: { name: "Custom Web Application", basePriceUSD: 1200, baseWeeks: 3 },
-        android: { name: "Native Android App", basePriceUSD: 1500, baseWeeks: 4 },
-        automation: { name: "Automation & Scraper Bot", basePriceUSD: 500, baseWeeks: 2 },
-        saas: { name: "SaaS Platform & Dashboard", basePriceUSD: 2000, baseWeeks: 6 }
+        starter: { name: "Starter: Landing Page / Simple Automation", basePriceUSD: 320, baseWeeks: 1 },
+        growth: { name: "Growth: SaaS MVP / Android / Chrome Extension", basePriceUSD: 1200, baseWeeks: 3 },
+        scale: { name: "Scale: Full Platform / Multi-Agent / Custom AI", basePriceUSD: 2500, baseWeeks: 6 }
     },
     features: {
         auth: { name: "User Authentication & Roles", priceUSD: 250, weeks: 0.5 },
@@ -14,7 +12,7 @@ const calculatorConfig = {
         realtime: { name: "Real-time Chat / WebSockets", priceUSD: 350, weeks: 1 },
         admin: { name: "Admin Dashboard Panel", priceUSD: 500, weeks: 1.5 }
     },
-    usdToIdrRate: 16000 // Fixed rate for presentation
+    usdToIdrRate: 18000 // Fixed rate for presentation (1 USD = Rp 18.000)
 };
 
 function initCalculator() {

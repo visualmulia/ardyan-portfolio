@@ -165,6 +165,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div>
                             <h3>${proj.title}</h3>
                             <p>${proj.shortDescription}</p>
+                            <div class="project-card-meta-list">
+                                <div class="meta-item"><i class="far fa-clock"></i> <span>Delivery: ${proj.deliveryTime || ''}</span></div>
+                                <div class="meta-item"><i class="fas fa-tools"></i> <span>Method: ${proj.method || ''}</span></div>
+                                <div class="meta-item"><i class="fas fa-check-circle"></i> <span>Result: ${proj.result || ''}</span></div>
+                            </div>
                         </div>
                         <div class="project-card-metrics">
                             ${metricsHtml}
@@ -234,6 +239,25 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             }
+        }
+
+        // Populate Delivery details
+        const deliveryContainer = document.getElementById('modal-delivery-detail');
+        if (deliveryContainer) {
+            deliveryContainer.innerHTML = `
+                <div class="modal-metric-card">
+                    <div class="modal-metric-lbl">Delivery Time</div>
+                    <div class="modal-metric-val">${proj.deliveryTime || 'N/A'}</div>
+                </div>
+                <div class="modal-metric-card">
+                    <div class="modal-metric-lbl">Methodology</div>
+                    <div class="modal-metric-val">${proj.method || 'N/A'}</div>
+                </div>
+                <div class="modal-metric-card">
+                    <div class="modal-metric-lbl">Outcome Result</div>
+                    <div class="modal-metric-val">${proj.result || 'N/A'}</div>
+                </div>
+            `;
         }
 
         // Setup live preview links
@@ -328,7 +352,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 7. Scroll Reveal Observer animations
+    // 7. Stats Counter scroll animation
+    const statsSection = document.getElementById('about');
+    const expNums = document.querySelectorAll('.exp-num');
+    let animated = false;
+
+    const animateCounters = () => {
+        expNums.forEach(numEl => {
+            const text = numEl.textContent.trim();
+            const value = parseFloat(text);
+            if (isNaN(value)) return;
+            
+            // Extract suffix (like +, x, %)
+            const suffix = text.replace(/[0-9.]/g, '');
+            let start = 0;
+            const duration = 1500; // ms
+            const startTime = performance.now();
+
+            const update = (now) => {
+                const elapsed = now - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                // Ease out quad
+                const easeProgress = progress * (2 - progress);
+                const current = Math.floor(easeProgress * value);
+                
+                numEl.textContent = current + suffix;
+                
+                if (progress < 1) {
+                    requestAnimationFrame(update);
+                } else {
+                    numEl.textContent = text; // Ensure exact final text
+                }
+            };
+            requestAnimationFrame(update);
+        });
+    };
+
+    if (statsSection) {
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animated) {
+                    animated = true;
+                    animateCounters();
+                }
+            });
+        }, { threshold: 0.2 });
+        statsObserver.observe(statsSection);
+    }
+
+    // 8. Scroll Reveal Observer animations
     const revealElements = document.querySelectorAll('.reveal');
     const observerOptions = {
         threshold: 0.12,

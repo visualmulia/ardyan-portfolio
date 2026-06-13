@@ -2,7 +2,7 @@
    HIGH-CONTRAST PREMIUM DRIBBBLE SYSTEM (ardyan.dev)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
     /* Color Palette */
@@ -17,6 +17,10 @@
     --color-accent: #c5ff00;          /* Neon Lime */
     --color-accent-rgb: 197, 255, 0;
     --color-accent-hover: #b2e600;
+
+    --color-ai-indigo: #6366f1;
+    --color-ai-purple: #a855f7;
+    --gradient-ai: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
     
     --color-success: #10b981;
     --color-text-dark: #111827;       /* Charcoal (for light theme) */
@@ -26,8 +30,8 @@
     --color-text-muted-light: #9ca3af;
 
     /* Fonts */
-    --font-heading: 'Outfit', sans-serif;
-    --font-body: 'Plus Jakarta Sans', sans-serif;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
 
     /* Standard Utilities */
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1430,6 +1434,303 @@ footer {
 }
 
 /* ==========================================================================
+   AI-AUGMENTED BRANDING & COMPONENT STYLES
+   ========================================================================== */
+
+/* Origin Story Badge */
+.origin-badge-container {
+    background: rgba(99, 102, 241, 0.05);
+    border: 1px dashed rgba(99, 102, 241, 0.25);
+    padding: 16px 24px;
+    border-radius: var(--border-radius-md);
+    max-width: 620px;
+    margin: 24px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.02);
+}
+.origin-badge-container .badge-tag {
+    background: var(--gradient-ai);
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+.origin-badge-container .badge-text {
+    font-size: 14px;
+    color: var(--color-text-muted-dark);
+    line-height: 1.5;
+}
+
+/* Value Proposition Section */
+.value-prop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+}
+.value-prop-card {
+    background: #0d1321;
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--border-radius-md);
+    padding: 32px;
+    transition: var(--transition-smooth);
+    position: relative;
+    overflow: hidden;
+}
+.value-prop-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at top right, rgba(99, 102, 241, 0.08), transparent 60%);
+    pointer-events: none;
+}
+.value-prop-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-ai-indigo);
+    box-shadow: 0 12px 30px rgba(99, 102, 241, 0.1);
+}
+.value-prop-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--gradient-ai);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    color: #fff;
+    font-size: 18px;
+}
+.value-prop-card h3 {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--color-text-light);
+}
+.value-prop-card p {
+    font-size: 14px;
+    color: var(--color-text-muted-light);
+    line-height: 1.6;
+}
+
+/* Service Card Meta Badges */
+.service-meta-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px dashed var(--color-dark-border);
+}
+.service-meta-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-text-muted-light);
+}
+.service-card:hover .service-meta-badge {
+    color: var(--color-text-muted-dark);
+}
+.service-meta-badge i {
+    color: var(--color-accent);
+    font-size: 10px;
+}
+.service-card:hover .service-meta-badge i {
+    color: #000;
+}
+
+/* Project Card Metadata List */
+.project-card-meta-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 16px 0;
+    padding-top: 16px;
+    border-top: 1px dashed var(--color-dark-border);
+}
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: var(--color-text-muted-light);
+}
+.meta-item i {
+    color: var(--color-ai-indigo);
+    font-size: 11px;
+    width: 14px;
+    text-align: center;
+}
+
+/* Modal Delivery Details */
+#modal-delivery-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+/* Process Section & Timeline */
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+    position: relative;
+}
+.process-step {
+    background: #0d1321;
+    border: 1px solid var(--color-dark-border);
+    border-radius: var(--border-radius-md);
+    padding: 32px;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+.process-step:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+.process-step-num {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    font-size: 32px;
+    font-weight: 900;
+    color: rgba(197, 255, 0, 0.08);
+    font-family: var(--font-heading);
+}
+.process-step-icon {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--color-dark-border);
+    color: var(--color-accent);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.process-step h3 {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: var(--color-text-light);
+}
+.process-step .timeline-val {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--color-accent);
+    display: block;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.process-step p {
+    font-size: 13px;
+    color: var(--color-text-muted-light);
+    line-height: 1.5;
+}
+
+/* Pricing Why Us micro-copy */
+.why-us-card {
+    background: rgba(99, 102, 241, 0.03);
+    border: 1px dashed rgba(99, 102, 241, 0.15);
+    padding: 24px;
+    border-radius: var(--border-radius-md);
+    margin-top: 24px;
+}
+.why-us-card h4 {
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: var(--color-ai-indigo);
+}
+.why-us-card p {
+    font-size: 13px;
+    color: var(--color-text-muted-light);
+    line-height: 1.5;
+}
+
+/* Fit Filter Section */
+.fit-filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 60px;
+}
+.fit-card {
+    border-radius: var(--border-radius-md);
+    padding: 40px;
+    border: 1px solid var(--color-dark-border);
+}
+.fit-card.not-fit {
+    background: rgba(239, 68, 68, 0.02);
+    border-color: rgba(239, 68, 68, 0.1);
+}
+.fit-card.is-fit {
+    background: rgba(16, 185, 129, 0.02);
+    border-color: rgba(16, 185, 129, 0.1);
+}
+.fit-card h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.fit-card.not-fit h4 {
+    color: #ef4444;
+}
+.fit-card.is-fit h4 {
+    color: #10b981;
+}
+.fit-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.fit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.fit-card.not-fit .fit-item {
+    color: var(--color-text-muted-light);
+}
+.fit-card.is-fit .fit-item {
+    color: var(--color-text-light);
+}
+.fit-item i {
+    margin-top: 4px;
+    font-size: 14px;
+}
+.fit-card.not-fit .fit-item i {
+    color: #ef4444;
+}
+.fit-card.is-fit .fit-item i {
+    color: #10b981;
+}
+
+/* ==========================================================================
    MEDIA QUERIES (RESPONSIVENESS)
    ========================================================================== */
 
@@ -1464,6 +1765,16 @@ footer {
 
     .modal-info-columns {
         grid-template-columns: 1fr;
+    }
+
+    .fit-filter-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .process-timeline {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 }
 

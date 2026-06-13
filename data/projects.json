@@ -1,104 +1,119 @@
 {
   "items": [
     {
-      "id": "auramart",
-      "title": "AuraMart SaaS & POS Dashboard",
+      "id": "pms",
+      "title": "Property Management System (PMS)",
       "category": "web-saas",
       "categoryLabel": "SaaS & Web App",
-      "shortDescription": "A high-performance SaaS dashboard and POS system designed for multi-outlet retail operations.",
-      "description": "AuraMart is an all-in-one SaaS platform enabling business owners to manage inventory, staff performance, and real-time sales transactions. It features an offline-first POS client, interactive analytics dashboards, and automatic inventory forecasting utilizing historic sales data.",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-      "techStack": ["HTML5", "CSS3", "JavaScript (ES6)", "Node.js", "Chart.js", "WebSockets"],
+      "shortDescription": "End-to-end property dashboard managing tenant billing, automated invoice distribution, and maintenance requests.",
+      "description": "A comprehensive SaaS platform designed for property managers to handle leases, track occupancy rates, and automate financial reports. Features include automated PDF invoice generation, integration with local payment systems, and tenant complaint ticketing pipelines.",
+      "image": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+      "techStack": ["Next.js", "Node.js", "PostgreSQL", "TailwindCSS", "PDFKit", "Sentry"],
       "metrics": {
-        "m1_key": "Checkout Speed",
-        "m1_val": "+140% Faster",
-        "m2_key": "Active Outlets",
-        "m2_val": "15+ Stores",
-        "m3_key": "System Uptime",
-        "m3_val": "99.99%"
+        "m1_key": "Occupancy Rate",
+        "m1_val": "98% Occupied",
+        "m2_key": "Invoice Automation",
+        "m2_val": "100% Automated",
+        "m3_key": "Payment Matching",
+        "m3_val": "< 5 seconds"
       },
       "liveUrl": "#",
-      "githubUrl": "#"
+      "githubUrl": "#",
+      "deliveryTime": "Built in 14 days",
+      "method": "AI-Assisted, Human-Validated",
+      "result": "120+ units managed, rent collection efficiency increased by 40%"
     },
     {
-      "id": "autoflow",
-      "title": "AutoFlow Marketing Automation Pipeline",
+      "id": "tokowaku",
+      "title": "TokoWaku POS & Automation Integration",
       "category": "automation",
       "categoryLabel": "Automation & Tools",
-      "shortDescription": "Industrial-grade lead scraping and automated multi-channel CRM integration pipeline.",
-      "description": "AutoFlow is a powerful background automation suite designed to capture leads across directories, qualify them based on customized criteria, and auto-dispatch personalized WhatsApp templates. It syncs directly with Google Sheets and Discord webhooks for instant notifications.",
-      "image": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&w=800&q=80",
-      "techStack": ["Node.js", "Puppeteer", "Google Sheets API", "WhatsApp API", "Cron Jobs"],
+      "shortDescription": "Point-Of-Sale retail system synced with automated multi-channel CRM pipelines and inventory notifications.",
+      "description": "TokoWaku bridges physical store operations with cloud database records. It automatically monitors inventory levels, generates low-stock alerts, and dispatches automated WhatsApp updates to suppliers. Integrated with Google Sheets and Discord hooks for real-time reporting.",
+      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+      "techStack": ["React", "Express", "MongoDB", "WhatsApp Cloud API", "Google Sheets API"],
       "metrics": {
         "m1_key": "Time Saved",
-        "m1_val": "25+ Hours/Week",
-        "m2_key": "Leads Processed",
-        "m2_val": "12,000+",
-        "m3_key": "Response Rate",
-        "m3_val": "3.5x Increase"
+        "m1_val": "20+ Hours/Week",
+        "m2_key": "Sync Latency",
+        "m2_val": "< 1.2 seconds",
+        "m3_key": "Alert Accuracy",
+        "m3_val": "100% Precise"
       },
       "liveUrl": "#",
-      "githubUrl": "#"
+      "githubUrl": "#",
+      "deliveryTime": "Built in 10 days",
+      "method": "AI-Assisted, Human-Validated",
+      "result": "3 active stores integrated, stockout events reduced to zero"
     },
     {
-      "id": "zenith",
+      "id": "chrome-extension",
+      "title": "Premium Productivity Chrome Extension",
+      "category": "automation",
+      "categoryLabel": "Automation & Tools",
+      "shortDescription": "Low-latency browser tool automating lead capture and contact extraction from active tabs.",
+      "description": "A custom lightweight Google Chrome extension designed for sales teams. Scrapes contact details from current active tabs dynamically, filters profiles using custom criteria, and posts qualified leads directly to a centralized CRM server via webhook integration.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      "techStack": ["JavaScript (ES6)", "Chrome Extension Manifest V3", "Web Scraping API", "CSS3"],
+      "metrics": {
+        "m1_key": "Scrape Speed",
+        "m1_val": "< 200ms / page",
+        "m2_key": "Weekly Leads",
+        "m2_val": "8,500+ Saved",
+        "m3_key": "Accuracy",
+        "m3_val": "99.8% Match"
+      },
+      "liveUrl": "#",
+      "githubUrl": "#",
+      "deliveryTime": "Built in 5 days",
+      "method": "AI-Assisted, Human-Validated",
+      "result": "Sales prospecting pipeline accelerated by 3x"
+    },
+    {
+      "id": "android-app",
       "title": "Zenith Task Manager (Android Native)",
       "category": "android",
       "categoryLabel": "Android App",
-      "shortDescription": "A modern, offline-first productivity and task tracking application built for Android.",
-      "description": "Zenith is a highly optimized, clean, and gesture-driven task manager built with native Android principles. It utilizes an encrypted local Room database, supports automatic cloud backups when online, features home screen widgets, and provides granular productivity analytics.",
+      "shortDescription": "Offline-first native mobile platform utilizing local encrypted SQLite storage and back-up syncs.",
+      "description": "A highly-optimized native Android task manager built with modern architectures. Implements SQLite Room caching, clean material design components, automated periodic cloud backups, and smart background workers for reminders.",
       "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
-      "techStack": ["Java/Kotlin", "Android SDK", "SQLite Room", "Local Notifications", "Biometrics"],
+      "techStack": ["Kotlin", "Android SDK", "SQLite Room", "WorkManager", "Jetpack Compose"],
       "metrics": {
-        "m1_key": "Active Installs",
-        "m1_val": "50,000+",
+        "m1_key": "Battery Load",
+        "m1_val": "< 0.3% / day",
         "m2_key": "App Rating",
-        "m2_val": "4.8 / 5.0",
-        "m3_key": "Battery Usage",
-        "m3_val": "< 0.5% / Day"
+        "m2_val": "4.9 / 5.0",
+        "m3_key": "Local DB Speed",
+        "m3_val": "< 10ms read"
       },
       "liveUrl": "#",
-      "githubUrl": "#"
+      "githubUrl": "#",
+      "deliveryTime": "Built in 18 days",
+      "method": "AI-Assisted, Human-Validated",
+      "result": "50k+ active installs, zero database corruption incidents reported"
     },
     {
-      "id": "cryptopulse",
-      "title": "CryptoPulse Multi-DEX Arbitrage Bot",
-      "category": "automation",
-      "categoryLabel": "Automation & SaaS",
-      "shortDescription": "Real-time scraper tracking cryptocurrency price discrepancies across multiple decentralized exchanges.",
-      "description": "CryptoPulse scans liquidity pools on various decentralized exchanges in real-time. By utilizing low-latency web sockets, it computes price differences for selected tokens and instantly dispatches high-priority Telegram alerts to subscribers when profitable arbitrage opportunities exceed target percentages.",
-      "image": "https://images.unsplash.com/photo-1621761191319-c6fb62004040?auto=format&fit=crop&w=800&q=80",
-      "techStack": ["Node.js", "WebSockets", "Ethers.js", "Redis", "Telegram Bot API"],
-      "metrics": {
-        "m1_key": "Alert Latency",
-        "m1_val": "< 150ms",
-        "m2_key": "Monthly Profit Opps",
-        "m2_val": "$8,500+",
-        "m3_key": "Uptime Record",
-        "m3_val": "300+ Days"
-      },
-      "liveUrl": "#",
-      "githubUrl": "#"
-    },
-    {
-      "id": "quantumforms",
-      "title": "Quantum Landing Page Builder",
+      "id": "storelink",
+      "title": "StoreLink / UMKM-AI Platform",
       "category": "web-saas",
       "categoryLabel": "SaaS & Web App",
-      "shortDescription": "Ultra-fast, high-converting drag-and-drop landing page builder optimized for mobile sales.",
-      "description": "Quantum is a lightweight web builder focusing on pure loading speed and accessibility. Built to empower marketers to spin up high-converting product landing pages in minutes, featuring pre-designed responsive blocks, custom CSS exports, and embedded payment gateways.",
+      "shortDescription": "AI-powered product catalog builder and instant transactional link generator for micro-merchants.",
+      "description": "StoreLink helps small-scale merchants structure their catalogs. Merchants enter text or upload product images, and the built-in AI assistant automatically generates descriptions, categorizes items, and builds a mini sales page with direct checkout links.",
       "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      "techStack": ["HTML5", "CSS3", "JavaScript (ES6)", "Local Storage API", "Stripe Checkout"],
+      "techStack": ["Next.js", "Supabase", "OpenAI API", "Vercel Serverless", "Stripe API"],
       "metrics": {
-        "m1_key": "Page Load Time",
-        "m1_val": "0.4s Average",
-        "m2_key": "SEO Mobile Score",
-        "m2_val": "100 / 100",
-        "m3_key": "Conversion Boost",
-        "m3_val": "Avg +24%"
+        "m1_key": "Catalog Creation",
+        "m1_val": "< 30 seconds",
+        "m2_key": "Active Merchants",
+        "m2_val": "250+ UMKM",
+        "m3_key": "Average Sales",
+        "m3_val": "+35% Growth"
       },
       "liveUrl": "#",
-      "githubUrl": "#"
+      "githubUrl": "#",
+      "deliveryTime": "Built in 12 days",
+      "method": "AI-Assisted, Human-Validated",
+      "result": "Successfully launched MVP for local retail merchants, generating over 1,500 transactional links"
     }
   ]
 }
