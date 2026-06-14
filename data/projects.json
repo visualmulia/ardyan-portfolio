@@ -59,6 +59,35 @@
       "category": "web-saas"
     },
     {
+      "shortDescription": "Professional-grade property management platform. Features automated tenant booking, invoicing, maintenance tracking, and WhatsApp integration.",
+      "deliveryTime": "Built in 20 days",
+      "method": "Type-Safe Fullstack Architecture",
+      "metrics": {
+        "m1_key": "API Type Safety",
+        "m1_val": "End-to-End via tRPC",
+        "m2_key": "Operational Automation",
+        "m2_val": "WhatsApp & Email Sync",
+        "m3_key": "Database Performance",
+        "m3_val": "Drizzle ORM Optimization"
+      },
+      "liveUrl": "https://the-rover-landing.vercel.app/",
+      "githubUrl": "#",
+      "techStack": [
+        "React 19 & Vite 7",
+        "Hono & tRPC",
+        "Drizzle ORM",
+        "Cloudflare R2",
+        "WhatsApp API "
+      ],
+      "categoryLabel": "SaaS & Web App",
+      "title": "The Rover: Integrated Property & Room Management System",
+      "id": "the-rover",
+      "image": "/assets/uploads/cover-the-rover.png",
+      "description": "The Rover is a comprehensive, high-performance property and room management application engineered for operational excellence. Built with a full-stack TypeScript architecture using React 19, Hono, and Drizzle ORM, it provides a seamless experience for managing tenants, bookings, and billing cycles. The platform includes mission-critical integrations such as automated WhatsApp notifications (Kirimi.id), secure file storage via Cloudflare R2, and transactional email services (Resend). Designed for scalability and maintainability, it features built-in automated migration workflows, tRPC-based type-safe API communication, and comprehensive testing suites to ensure production-level reliability.",
+      "result": "Deployed as an all-in-one property management hub, successfully automating complex billing, tenant communications, and maintenance tracking workflows",
+      "category": "web-saas"
+    },
+    {
       "shortDescription": "A modern, offline-capable web application built with React 19 and Dexie. Features seamless cloud synchronization via Supabase and instant local storage capabilities.",
       "deliveryTime": "Built in 12 days",
       "method": "Local-First Engineering, PWA-Centric",
@@ -114,35 +143,6 @@
       "description": "A custom lightweight Google Chrome extension designed for sales teams. Scrapes contact details from current active tabs dynamically, filters profiles using custom criteria, and posts qualified leads directly to a centralized CRM server via webhook integration.",
       "result": "Sales prospecting pipeline accelerated by 3x",
       "category": "automation"
-    },
-    {
-      "shortDescription": "Professional-grade property management platform. Features automated tenant booking, invoicing, maintenance tracking, and WhatsApp integration.",
-      "deliveryTime": "Built in 20 days",
-      "method": "Type-Safe Fullstack Architecture",
-      "metrics": {
-        "m1_key": "API Type Safety",
-        "m1_val": "End-to-End via tRPC",
-        "m2_key": "Operational Automation",
-        "m2_val": "WhatsApp & Email Sync",
-        "m3_key": "Database Performance",
-        "m3_val": "Drizzle ORM Optimization"
-      },
-      "liveUrl": "https://the-rover-landing.vercel.app/",
-      "githubUrl": "#",
-      "techStack": [
-        "React 19 & Vite 7",
-        "Hono & tRPC",
-        "Drizzle ORM",
-        "Cloudflare R2",
-        "WhatsApp API "
-      ],
-      "categoryLabel": "SaaS & Web App",
-      "title": "The Rover: Integrated Property & Room Management System",
-      "id": "the-rover",
-      "image": "/assets/uploads/cover-the-rover.png",
-      "description": "The Rover is a comprehensive, high-performance property and room management application engineered for operational excellence. Built with a full-stack TypeScript architecture using React 19, Hono, and Drizzle ORM, it provides a seamless experience for managing tenants, bookings, and billing cycles. The platform includes mission-critical integrations such as automated WhatsApp notifications (Kirimi.id), secure file storage via Cloudflare R2, and transactional email services (Resend). Designed for scalability and maintainability, it features built-in automated migration workflows, tRPC-based type-safe API communication, and comprehensive testing suites to ensure production-level reliability.",
-      "result": "Deployed as an all-in-one property management hub, successfully automating complex billing, tenant communications, and maintenance tracking workflows",
-      "category": "web-saas"
     },
     {
       "shortDescription": "Premium audio-centric wellness app. Features 4-channel sound mixing, 3D spatial studio, and haptic-guided breathwork for sleep and productivity.",
