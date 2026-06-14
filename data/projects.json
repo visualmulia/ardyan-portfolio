@@ -1,6 +1,35 @@
 {
   "items": [
     {
+      "shortDescription": "Indonesia's #1 bird song training and competition discovery platform, featuring advanced audio management, geo-location event tracking, and seamless hybrid monetization.",
+      "deliveryTime": "Built in 28 days",
+      "method": "Human-Driven, AI-Assisted",
+      "metrics": {
+        "m1_key": "Background Audio Stability",
+        "m1_val": "99.9% Uptime",
+        "m2_key": "Play Store Rating",
+        "m2_val": "4.8 / 5.0",
+        "m3_key": "Data Sync Latency",
+        "m3_val": "< 150ms"
+      },
+      "liveUrl": "https://play.google.com/store/apps/details?id=com.masbroostudio.rajagacor",
+      "githubUrl": "#",
+      "techStack": [
+        "Kotlin",
+        "Flutter (Dart)",
+        "Firebase",
+        "Cloud Firestore",
+        "Firebase Messaging + Local Notifications"
+      ],
+      "categoryLabel": "Android App",
+      "title": "Raja Gacor: No. 1 Bird Song Training & Competition App",
+      "id": "rajagacor",
+      "image": "/assets/uploads/banner-lp.png",
+      "description": "A highly-optimized native Android application built with Flutter, tailored for the vibrant bird-hobbyist community in Indonesia. The app delivers high-fidelity audio training (masteran) leveraging a custom implementation of just_audio and audio_service for uninterrupted background playback. \n\nIt features live bird competition discovery integrated with real-time Firestore synchronization, device geolocating for local event tracking, and deep-linking capabilities via app_links to drive viral user acquisition. Engineered with robust offline state management using SharedPreferences, secure OAuth2 authentications, and optimized data models to ensure seamless operation under weak cellular connectivity.",
+      "result": "Successfully published on Google Play Store with functional hybrid monetization (AdMob + In-App Purchases) and active automated update integration.",
+      "category": "android"
+    },
+    {
       "shortDescription": "High-performance logistics management platform. Featuring real-time operational tracking, automated documentation (PDF), and integrated secure payment processing.",
       "deliveryTime": "Built in 21 days",
       "method": "Modular Web Architecture, Performance-Centric",
@@ -85,35 +114,6 @@
       "description": "A custom lightweight Google Chrome extension designed for sales teams. Scrapes contact details from current active tabs dynamically, filters profiles using custom criteria, and posts qualified leads directly to a centralized CRM server via webhook integration.",
       "result": "Sales prospecting pipeline accelerated by 3x",
       "category": "automation"
-    },
-    {
-      "shortDescription": "Indonesia's #1 bird song training and competition discovery platform, featuring advanced audio management, geo-location event tracking, and seamless hybrid monetization.",
-      "deliveryTime": "Built in 28 days",
-      "method": "Human-Driven, AI-Assisted",
-      "metrics": {
-        "m1_key": "Background Audio Stability",
-        "m1_val": "99.9% Uptime",
-        "m2_key": "Play Store Rating",
-        "m2_val": "4.8 / 5.0",
-        "m3_key": "Data Sync Latency",
-        "m3_val": "< 150ms"
-      },
-      "liveUrl": "https://play.google.com/store/apps/details?id=com.masbroostudio.rajagacor",
-      "githubUrl": "#",
-      "techStack": [
-        "Kotlin",
-        "Flutter (Dart)",
-        "Firebase",
-        "Cloud Firestore",
-        "Firebase Messaging + Local Notifications"
-      ],
-      "categoryLabel": "Android App",
-      "title": "Raja Gacor: No. 1 Bird Song Training & Competition App",
-      "id": "rajagacor",
-      "image": "/assets/uploads/banner-lp.png",
-      "description": "A highly-optimized native Android application built with Flutter, tailored for the vibrant bird-hobbyist community in Indonesia. The app delivers high-fidelity audio training (masteran) leveraging a custom implementation of just_audio and audio_service for uninterrupted background playback. \n\nIt features live bird competition discovery integrated with real-time Firestore synchronization, device geolocating for local event tracking, and deep-linking capabilities via app_links to drive viral user acquisition. Engineered with robust offline state management using SharedPreferences, secure OAuth2 authentications, and optimized data models to ensure seamless operation under weak cellular connectivity.",
-      "result": "Successfully published on Google Play Store with functional hybrid monetization (AdMob + In-App Purchases) and active automated update integration.",
-      "category": "android"
     },
     {
       "shortDescription": "AI-powered product catalog builder and instant transactional link generator for micro-merchants.",
