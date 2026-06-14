@@ -116,32 +116,32 @@
       "category": "automation"
     },
     {
-      "shortDescription": "AI-powered product catalog builder and instant transactional link generator for micro-merchants.",
-      "deliveryTime": "Built in 12 days",
-      "method": "AI-Assisted, Human-Validated",
+      "shortDescription": "Professional-grade property management platform. Features automated tenant booking, invoicing, maintenance tracking, and WhatsApp integration.",
+      "deliveryTime": "Built in 20 days",
+      "method": "Type-Safe Fullstack Architecture",
       "metrics": {
-        "m1_key": "Catalog Creation",
-        "m1_val": "< 30 seconds",
-        "m2_key": "Active Merchants",
-        "m2_val": "250+ UMKM",
-        "m3_key": "Average Sales",
-        "m3_val": "+35% Growth"
+        "m1_key": "API Type Safety",
+        "m1_val": "End-to-End via tRPC",
+        "m2_key": "Operational Automation",
+        "m2_val": "WhatsApp & Email Sync",
+        "m3_key": "Database Performance",
+        "m3_val": "Drizzle ORM Optimization"
       },
-      "liveUrl": "#",
+      "liveUrl": "https://the-rover-landing.vercel.app/",
       "githubUrl": "#",
       "techStack": [
-        "Next.js",
-        "Supabase",
-        "OpenAI API",
-        "Vercel Serverless",
-        "Stripe API"
+        "React 19 & Vite 7",
+        "Hono & tRPC",
+        "Drizzle ORM",
+        "Cloudflare R2",
+        "WhatsApp API "
       ],
       "categoryLabel": "SaaS & Web App",
-      "title": "StoreLink / UMKM-AI Platform",
-      "id": "storelink",
-      "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
-      "description": "StoreLink helps small-scale merchants structure their catalogs. Merchants enter text or upload product images, and the built-in AI assistant automatically generates descriptions, categorizes items, and builds a mini sales page with direct checkout links.",
-      "result": "Successfully launched MVP for local retail merchants, generating over 1,500 transactional links",
+      "title": "The Rover: Integrated Property & Room Management System",
+      "id": "the-rover",
+      "image": "/assets/uploads/cover-the-rover.png",
+      "description": "The Rover is a comprehensive, high-performance property and room management application engineered for operational excellence. Built with a full-stack TypeScript architecture using React 19, Hono, and Drizzle ORM, it provides a seamless experience for managing tenants, bookings, and billing cycles. The platform includes mission-critical integrations such as automated WhatsApp notifications (Kirimi.id), secure file storage via Cloudflare R2, and transactional email services (Resend). Designed for scalability and maintainability, it features built-in automated migration workflows, tRPC-based type-safe API communication, and comprehensive testing suites to ensure production-level reliability.",
+      "result": "Deployed as an all-in-one property management hub, successfully automating complex billing, tenant communications, and maintenance tracking workflows",
       "category": "web-saas"
     },
     {
