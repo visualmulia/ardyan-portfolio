@@ -59,35 +59,6 @@
       "category": "web-saas"
     },
     {
-      "shortDescription": "Professional-grade property management platform. Features automated tenant booking, invoicing, maintenance tracking, and WhatsApp integration.",
-      "deliveryTime": "Built in 20 days",
-      "method": "Type-Safe Fullstack Architecture",
-      "metrics": {
-        "m1_key": "API Type Safety",
-        "m1_val": "End-to-End via tRPC",
-        "m2_key": "Operational Automation",
-        "m2_val": "WhatsApp & Email Sync",
-        "m3_key": "Database Performance",
-        "m3_val": "Drizzle ORM Optimization"
-      },
-      "liveUrl": "https://the-rover-landing.vercel.app/",
-      "githubUrl": "#",
-      "techStack": [
-        "React 19 & Vite 7",
-        "Hono & tRPC",
-        "Drizzle ORM",
-        "Cloudflare R2",
-        "WhatsApp API "
-      ],
-      "categoryLabel": "SaaS & Web App",
-      "title": "The Rover: Integrated Property & Room Management System",
-      "id": "the-rover",
-      "image": "/assets/uploads/cover-the-rover.png",
-      "description": "The Rover is a comprehensive, high-performance property and room management application engineered for operational excellence. Built with a full-stack TypeScript architecture using React 19, Hono, and Drizzle ORM, it provides a seamless experience for managing tenants, bookings, and billing cycles. The platform includes mission-critical integrations such as automated WhatsApp notifications (Kirimi.id), secure file storage via Cloudflare R2, and transactional email services (Resend). Designed for scalability and maintainability, it features built-in automated migration workflows, tRPC-based type-safe API communication, and comprehensive testing suites to ensure production-level reliability.",
-      "result": "Deployed as an all-in-one property management hub, successfully automating complex billing, tenant communications, and maintenance tracking workflows",
-      "category": "web-saas"
-    },
-    {
       "shortDescription": "A modern, offline-capable web application built with React 19 and Dexie. Features seamless cloud synchronization via Supabase and instant local storage capabilities.",
       "deliveryTime": "Built in 12 days",
       "method": "Local-First Engineering, PWA-Centric",
@@ -115,6 +86,35 @@
       "description": "Prolog is a sophisticated web application engineered for speed and reliability, utilizing the latest React 19 ecosystem. The platform implements a \"local-first\" architecture using Dexie.js for lightning-fast IndexedDB operations, ensuring critical functionality remains available even without an active internet connection. It features real-time cloud synchronization backed by Supabase for secure, scalable state management, and an integrated PDF generation engine for immediate reporting. Optimized as a PWA, Prolog delivers an app-like experience directly within the browser, balancing heavy local data processing with efficient cloud syncing.",
       "result": "Successfully deployed as a high-performance web platform, offering enterprise-grade offline reliability and seamless cross-device synchronization",
       "category": "automation"
+    },
+    {
+      "shortDescription": "Professional-grade property management platform. Features automated tenant booking, invoicing, maintenance tracking, and WhatsApp integration.",
+      "deliveryTime": "Built in 20 days",
+      "method": "Type-Safe Fullstack Architecture",
+      "metrics": {
+        "m1_key": "API Type Safety",
+        "m1_val": "End-to-End via tRPC",
+        "m2_key": "Operational Automation",
+        "m2_val": "WhatsApp & Email Sync",
+        "m3_key": "Database Performance",
+        "m3_val": "Drizzle ORM Optimization"
+      },
+      "liveUrl": "https://the-rover-landing.vercel.app/",
+      "githubUrl": "#",
+      "techStack": [
+        "React 19 & Vite 7",
+        "Hono & tRPC",
+        "Drizzle ORM",
+        "Cloudflare R2",
+        "WhatsApp API "
+      ],
+      "categoryLabel": "SaaS & Web App",
+      "title": "The Rover: Integrated Property & Room Management System",
+      "id": "the-rover",
+      "image": "/assets/uploads/cover-the-rover.png",
+      "description": "The Rover is a comprehensive, high-performance property and room management application engineered for operational excellence. Built with a full-stack TypeScript architecture using React 19, Hono, and Drizzle ORM, it provides a seamless experience for managing tenants, bookings, and billing cycles. The platform includes mission-critical integrations such as automated WhatsApp notifications (Kirimi.id), secure file storage via Cloudflare R2, and transactional email services (Resend). Designed for scalability and maintainability, it features built-in automated migration workflows, tRPC-based type-safe API communication, and comprehensive testing suites to ensure production-level reliability.",
+      "result": "Deployed as an all-in-one property management hub, successfully automating complex billing, tenant communications, and maintenance tracking workflows",
+      "category": "web-saas"
     },
     {
       "shortDescription": "Low-latency browser tool automating lead capture and contact extraction from active tabs.",
