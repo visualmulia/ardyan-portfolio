@@ -30,32 +30,32 @@
       "category": "web-saas"
     },
     {
-      "shortDescription": "Point-Of-Sale retail system synced with automated multi-channel CRM pipelines and inventory notifications.",
-      "deliveryTime": "Built in 10 days",
-      "method": "AI-Assisted, Human-Validated",
+      "shortDescription": "A modern, offline-capable web application built with React 19 and Dexie. Features seamless cloud synchronization via Supabase and instant local storage capabilities.",
+      "deliveryTime": "Built in 12 days",
+      "method": "Local-First Engineering, PWA-Centric",
       "metrics": {
-        "m1_key": "Time Saved",
-        "m1_val": "20+ Hours/Week",
-        "m2_key": "Sync Latency",
-        "m2_val": "< 1.2 seconds",
-        "m3_key": "Alert Accuracy",
-        "m3_val": "100% Precise"
+        "m1_key": "Offline Data Read Speed",
+        "m1_val": "< 5ms (IndexedDB)",
+        "m2_key": "Architecture Type",
+        "m2_val": "Local First / PWA",
+        "m3_key": "Deployment Reliability",
+        "m3_val": "100% Client-Side Sync"
       },
-      "liveUrl": "#",
+      "liveUrl": "https://www.prolog.web.id/",
       "githubUrl": "#",
       "techStack": [
-        "React",
-        "Express",
-        "MongoDB",
-        "WhatsApp Cloud API",
-        "Google Sheets API"
+        "React 19 (Vite)",
+        "Supabase",
+        "Dexie.js",
+        "Vite PWA Plugin",
+        "jsPDF & AutoTable"
       ],
       "categoryLabel": "Automation & Tools",
-      "title": "TokoWaku POS & Automation Integration",
-      "id": "tokowaku",
-      "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
-      "description": "TokoWaku bridges physical store operations with cloud database records. It automatically monitors inventory levels, generates low-stock alerts, and dispatches automated WhatsApp updates to suppliers. Integrated with Google Sheets and Discord hooks for real-time reporting.",
-      "result": "3 active stores integrated, stockout events reduced to zero",
+      "title": "Prolog: High-Performance Local-First Web Platform",
+      "id": "prolog",
+      "image": "/assets/uploads/cover-prolog.png",
+      "description": "Prolog is a sophisticated web application engineered for speed and reliability, utilizing the latest React 19 ecosystem. The platform implements a \"local-first\" architecture using Dexie.js for lightning-fast IndexedDB operations, ensuring critical functionality remains available even without an active internet connection. It features real-time cloud synchronization backed by Supabase for secure, scalable state management, and an integrated PDF generation engine for immediate reporting. Optimized as a PWA, Prolog delivers an app-like experience directly within the browser, balancing heavy local data processing with efficient cloud syncing.",
+      "result": "Successfully deployed as a high-performance web platform, offering enterprise-grade offline reliability and seamless cross-device synchronization",
       "category": "automation"
     },
     {
