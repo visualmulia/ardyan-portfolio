@@ -117,34 +117,6 @@
       "category": "web-saas"
     },
     {
-      "shortDescription": "Low-latency browser tool automating lead capture and contact extraction from active tabs.",
-      "deliveryTime": "Built in 5 days",
-      "method": "AI-Assisted, Human-Validated",
-      "metrics": {
-        "m1_key": "Scrape Speed",
-        "m1_val": "< 200ms / page",
-        "m2_key": "Weekly Leads",
-        "m2_val": "8,500+ Saved",
-        "m3_key": "Accuracy",
-        "m3_val": "99.8% Match"
-      },
-      "liveUrl": "#",
-      "githubUrl": "#",
-      "techStack": [
-        "JavaScript (ES6)",
-        "Chrome Extension Manifest V3",
-        "Web Scraping API",
-        "CSS3"
-      ],
-      "categoryLabel": "Automation & Tools",
-      "title": "Premium Productivity Chrome Extension",
-      "id": "chrome-extension",
-      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-      "description": "A custom lightweight Google Chrome extension designed for sales teams. Scrapes contact details from current active tabs dynamically, filters profiles using custom criteria, and posts qualified leads directly to a centralized CRM server via webhook integration.",
-      "result": "Sales prospecting pipeline accelerated by 3x",
-      "category": "automation"
-    },
-    {
       "shortDescription": "Premium audio-centric wellness app. Features 4-channel sound mixing, 3D spatial studio, and haptic-guided breathwork for sleep and productivity.",
       "deliveryTime": "Built in 21 days",
       "method": "Performance-First, User-Centric Design",
