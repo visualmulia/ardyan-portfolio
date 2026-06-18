@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Construct Whatsapp message API URL
             const whatsappNumber = "6281289653355"; // Ardyan WhatsApp Link
-            let text = `*New Lead from Ardyan.dev*\n\n`;
+            let text = `*New Lead from Ardyan.web.id*\n\n`;
             text += `*Name:* ${name}\n`;
             text += `*Email:* ${email}\n`;
             text += `*Requested Service:* ${service}\n\n`;

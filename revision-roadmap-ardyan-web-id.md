@@ -1,4 +1,4 @@
-# REVISION ROADMAP — ardyan.dev Landing Page
+# REVISION ROADMAP — ardyan.web.id Landing Page
 ## Dokumen Perbaikan Berdasarkan Strategic Framing "AI-Augmented Product Builder"
 
 **Dibuat:** 13 Juni 2026  
@@ -453,7 +453,7 @@ AI is my power tool. You're hiring the architect, not the hammer."
 "Start Your Project" → Email form / Notion form
 
 [Secondary Options]
-📧 Email: ardyan@ardyan.dev
+📧 Email: ardyan@ardyan.web.id
 💬 WhatsApp Business: [number] (for Indonesia clients)
 📝 Notion Form: [link] (structured brief submission)
 

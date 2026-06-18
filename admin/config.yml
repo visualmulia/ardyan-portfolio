@@ -5,7 +5,7 @@ backend:
   name: github
   repo: visualmulia/ardyan-portfolio
   branch: main
-  base_url: https://www.ardyan.dev
+  base_url: https://www.ardyan.web.id
   auth_endpoint: api/auth
 
 media_folder: assets/uploads
