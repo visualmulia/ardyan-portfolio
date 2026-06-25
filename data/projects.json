@@ -1,20 +1,9 @@
 {
   "items": [
     {
-      "id": "taman-cerita",
-      "title": "Taman Cerita: Interactive Multi-Ending Web Novel Platform",
-      "category": "web-saas",
-      "categoryLabel": "SaaS & Web App",
       "shortDescription": "Interactive universe-based web novel platform featuring branching narratives, multi-ending choice mechanics, and transparent ethical monetization.",
-      "description": "Taman Cerita is a premium Indonesian interactive fiction platform that combines serialized web novels with visual novel choice mechanics. Designed with an advanced \"universe-based\" shared storytelling hierarchy, it allows readers to determine narrative paths leading to distinct alternative or secret endings. Engineered as a mobile-first PWA with Next.js App Router for server-side progress persistence and static chapter generation, backed by Supabase for PostgreSQL, auth, real-time database functions, and integrated with Midtrans Snap for secure local e-wallet transactions.",
-      "image": "/assets/taman_cerita.jpg",
-      "techStack": [
-        "Next.js (App Router)",
-        "Tailwind CSS & shadcn/ui",
-        "Framer Motion",
-        "Supabase (Postgres & Auth)",
-        "Midtrans (Snap)"
-      ],
+      "deliveryTime": "Built in 25 days",
+      "method": "AI-Augmented Content & Tech Co-Creation",
       "metrics": {
         "m1_key": "Story Engine Latency",
         "m1_val": "< 100ms Choice Sync",
@@ -25,9 +14,20 @@
       },
       "liveUrl": "https://temancerita.web.id",
       "githubUrl": "#",
-      "deliveryTime": "Built in 25 days",
-      "method": "AI-Augmented Content & Tech Co-Creation",
-      "result": "MVP platform built with a fully integrated lightweight story CMS, Postgres schemas supporting cross-universe narrative resonance, and anonymous reader onboarding flows."
+      "techStack": [
+        "Next.js (App Router)",
+        "Tailwind CSS & shadcn/ui",
+        "Framer Motion",
+        "Supabase (Postgres & Auth)",
+        "Midtrans (Snap)"
+      ],
+      "categoryLabel": "SaaS & Web App",
+      "title": "Taman Cerita: Interactive Multi-Ending Web Novel Platform",
+      "id": "taman-cerita",
+      "image": "/assets/uploads/banner-taman-cerita-ardyan-dev.png",
+      "description": "Taman Cerita is a premium Indonesian interactive fiction platform that combines serialized web novels with visual novel choice mechanics. Designed with an advanced \"universe-based\" shared storytelling hierarchy, it allows readers to determine narrative paths leading to distinct alternative or secret endings. Engineered as a mobile-first PWA with Next.js App Router for server-side progress persistence and static chapter generation, backed by Supabase for PostgreSQL, auth, real-time database functions, and integrated with Midtrans Snap for secure local e-wallet transactions.",
+      "result": "MVP platform built with a fully integrated lightweight story CMS, Postgres schemas supporting cross-universe narrative resonance, and anonymous reader onboarding flows.",
+      "category": "web-saas"
     },
     {
       "shortDescription": "Indonesia's #1 bird song training and competition discovery platform, featuring advanced audio management, geo-location event tracking, and seamless hybrid monetization.",
