@@ -1,0 +1,11 @@
+# ai.txt - AI Crawler Permissions and Policy
+Spec-Version: 1.0
+Site-Name: Ardyan Dev
+Site-URL: https://ardyan.web.id
+
+User-Agent: *
+Allow-Training: no
+Allow-Retrieval: yes
+Allow-Citation: yes
+Attribution: Required - Cite as Ardyan Dev (https://ardyan.web.id)
+Contact: https://ardyan.web.id/#contact

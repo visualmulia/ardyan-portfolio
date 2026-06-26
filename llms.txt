@@ -1,0 +1,113 @@
+# Ardyan | AI-Augmented Product Builder
+
+> Ardyan is a premium software developer and designer who transitions physical design thinking into high-performance digital products. Specialized in building SaaS MVPs, native/hybrid Android apps, and custom web automation pipelines with AI-accelerated speed. Operating on a strict async-first process (no Zoom meetings) for maximum productivity.
+> 
+> Primary Site: [https://ardyan.web.id](https://ardyan.web.id)
+
+---
+
+## Core Services
+
+- **Web Dev & Landing Pages**: High-converting landing pages and scalable web dashboards designed with architectural precision. Stack: React, Next.js, Tailwind CSS, Hono, Supabase. Pricing: Starts from $320 / Rp 5.760.000.
+- **Android App Development**: Offline-first native and cross-platform mobile apps. Custom background audio services, local SQLite/Room caching, and robust state management. Stack: Kotlin, Flutter, Dart, Firebase. Pricing: Starts from $1200 / Rp 21.600.000.
+- **Scraping & Automation Bots**: Cloud-native scraper pipelines and automated browser scripts to extract data and sync leads to CRMs. Stack: Python, Node.js, Selenium, Puppeteer, Cron schedules. Pricing: Starts from $320 / Rp 5.760.000.
+
+---
+
+## Shipped & Validated Portfolio
+
+The following list comprises official case studies of shipped digital products:
+
+### 1. Taman Cerita
+- **URL**: [https://temancerita.web.id](https://temancerita.web.id)
+- **Role/Type**: Interactive Multi-Ending Web Novel Platform (SaaS & Web App)
+- **Tech Stack**: Next.js (App Router), Tailwind CSS, shadcn/ui, Framer Motion, Supabase (Postgres & Auth), Midtrans (Snap API)
+- **Delivery Time**: 25 days
+- **Metrics**: 
+  - Choice Synchronization Latency: < 100ms
+  - Monetization Model: Ethical Freemium via Midtrans Snap
+  - Architecture: Multi-Ending Graph Tracking
+- **Description**: Combining serialized web novels with visual novel mechanics using a shared universe storytelling hierarchy.
+
+### 2. Raja Gacor
+- **URL**: [Raja Gacor on Play Store](https://play.google.com/store/apps/details?id=com.masbroostudio.rajagacor)
+- **Role/Type**: Bird Song Training & Competition Discovery Platform (Android App)
+- **Tech Stack**: Kotlin, Flutter, Dart, Firebase, Cloud Firestore, Firebase Messaging
+- **Delivery Time**: 28 days
+- **Metrics**:
+  - Background Audio Stability: 99.9% Uptime
+  - Play Store Rating: 4.8 / 5.0
+  - Data Sync Latency: < 150ms
+- **Description**: Features high-fidelity masteran audio training utilizing background audio service implementation and offline caching, with real-time Firestore competition synchronization.
+
+### 3. Logis
+- **URL**: [https://www.logis-app.web.id/](https://www.logis-app.web.id/)
+- **Role/Type**: Smart Logistics & Operational Management (SaaS & Web App)
+- **Tech Stack**: Next.js 16 (App Router), Firebase, Tailwind CSS, Radix UI, Midtrans Client, jsPDF
+- **Delivery Time**: 21 days
+- **Metrics**:
+  - Document Generation Speed: < 200ms for Auto-PDFs
+  - Transaction Reliability: 100% Midtrans Secure Integration
+  - Observability: Sentry-Tracked Uptime
+- **Description**: Operational dashboard streamlining tenant booking, automated invoicing, real-time tracking, and invoice output generation.
+
+### 4. Prolog
+- **URL**: [https://www.prolog.web.id/](https://www.prolog.web.id/)
+- **Role/Type**: Local-First Reporting Platform (Automation & Tools)
+- **Tech Stack**: React 19 (Vite), Supabase, Dexie.js (IndexedDB), Vite PWA Plugin, jsPDF
+- **Delivery Time**: 12 days
+- **Metrics**:
+  - Offline Data Read Speed: < 5ms
+  - Architecture: Local First / Offline PWA
+  - Sync Integrity: 100% Client-Side Sync to Supabase
+- **Description**: High-performance local-first app using Dexie.js for lightning-fast database operations, working offline and syncing to Supabase when connection restores.
+
+### 5. The Rover
+- **URL**: [https://therover.web.id](https://therover.web.id)
+- **Role/Type**: Property & Room Management System (SaaS & Web App)
+- **Tech Stack**: React 19, Vite 7, Hono, tRPC, Drizzle ORM, Cloudflare R2, WhatsApp API
+- **Delivery Time**: 20 days
+- **Metrics**:
+  - API Type Safety: End-to-End compile-time verification via tRPC
+  - Operational Automation: WhatsApp & Email sync notifications
+  - Database Performance: Drizzle ORM optimization
+- **Description**: Tenant booking management, cloud file storage (Cloudflare R2), automated WhatsApp alerts, and automated database migration schemas.
+
+### 6. ZenBird
+- **URL**: [https://zenbird.web.id](https://zenbird.web.id)
+- **Role/Type**: Premium Nature Sounds & Wellness App (Android App)
+- **Tech Stack**: Flutter, Dart, Firebase Firestore, Just_Audio, Google Play Billing
+- **Delivery Time**: 21 days
+- **Metrics**:
+  - Audio Mixing Capability: 4-Channel Simultaneous mixing
+  - Monetization: 100% One-Time Lifetime Purchase
+  - Subscription Churn: 0% (subscription-free model)
+- **Description**: Wellness app featuring psychoacoustic 3D spatial studios, volume mixers, visual breathwork timers, and lifetime Play Store billing.
+
+### 7. MorphBid
+- **URL**: [MorphBid on Play Store](https://play.google.com/store/apps/details?id=com.morphbid.app&pcampaignid=web_share)
+- **Role/Type**: Reptile Auction Platform (Android App)
+- **Tech Stack**: Flutter, Dart, Firebase Firestore, Cloudinary, Cloud Functions
+- **Delivery Time**: 45 days
+- **Metrics**:
+  - Auction Sync: < 200ms real-time latency
+  - Authentication: Secure Firebase Authentication
+  - Image Cataloging: Optimized via Cloudinary
+- **Description**: Mobile auction platform with live bidding, pet catalogs, in-app messaging, and push notification integrations.
+
+---
+
+## How We Work (Async-First Process)
+
+1. **Discovery**: Client configures scope on the Interactive Calculator. Brief is compiled and sent via WhatsApp/Email.
+2. **Design**: Wireframing, interface system design, database architecture, and API planning.
+3. **Build**: Accelerated development cycles utilizing AI code generation checking by human validation. 
+4. **Deliver**: Deployment to production (Vercel/Google Play Store), full documentation handoff, and 30-day support window.
+
+*No Zoom meetings. Progress updates are detailed in written form on Notion, allowing clients to review schedules and code changes on their own timeline.*
+
+---
+
+## Contact Info
+
+- **WhatsApp & Email Contact Form**: Available at [https://ardyan.web.id/#contact](https://ardyan.web.id/#contact)
