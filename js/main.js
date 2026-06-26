@@ -166,6 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <h3>${proj.title}</h3>
                             <p>${proj.shortDescription}</p>
                             <div class="project-card-meta-list">
+                                <div class="meta-item"><i class="far fa-calendar-alt"></i> <span>Completed: ${proj.completionDate || ''}</span></div>
                                 <div class="meta-item"><i class="far fa-clock"></i> <span>Delivery: ${proj.deliveryTime || ''}</span></div>
                                 <div class="meta-item"><i class="fas fa-tools"></i> <span>Method: ${proj.method || ''}</span></div>
                                 <div class="meta-item"><i class="fas fa-check-circle"></i> <span>Result: ${proj.result || ''}</span></div>
@@ -245,6 +246,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const deliveryContainer = document.getElementById('modal-delivery-detail');
         if (deliveryContainer) {
             deliveryContainer.innerHTML = `
+                <div class="modal-delivery-card">
+                    <div class="modal-metric-lbl">Completed</div>
+                    <div class="modal-metric-val">${proj.completionDate || 'N/A'}</div>
+                </div>
                 <div class="modal-delivery-card">
                     <div class="modal-metric-lbl">Delivery Time</div>
                     <div class="modal-metric-val">${proj.deliveryTime || 'N/A'}</div>

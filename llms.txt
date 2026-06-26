@@ -1,5 +1,7 @@
 # Ardyan | AI-Augmented Product Builder
 
+> **Last Updated: June 27, 2026**
+> 
 > Ardyan is a premium software developer and designer who transitions physical design thinking into high-performance digital products. Specialized in building SaaS MVPs, native/hybrid Android apps, and custom web automation pipelines with AI-accelerated speed. Operating on a strict async-first process (no Zoom meetings) for maximum productivity.
 > 
 > Primary Site: [https://ardyan.web.id](https://ardyan.web.id)
@@ -23,6 +25,7 @@ The following list comprises official case studies of shipped digital products:
 - **Role/Type**: Interactive Multi-Ending Web Novel Platform (SaaS & Web App)
 - **Tech Stack**: Next.js (App Router), Tailwind CSS, shadcn/ui, Framer Motion, Supabase (Postgres & Auth), Midtrans (Snap API)
 - **Delivery Time**: 25 days
+- **Completion Date**: June 2026
 - **Metrics**: 
   - Choice Synchronization Latency: < 100ms
   - Monetization Model: Ethical Freemium via Midtrans Snap
@@ -34,6 +37,7 @@ The following list comprises official case studies of shipped digital products:
 - **Role/Type**: Bird Song Training & Competition Discovery Platform (Android App)
 - **Tech Stack**: Kotlin, Flutter, Dart, Firebase, Cloud Firestore, Firebase Messaging
 - **Delivery Time**: 28 days
+- **Completion Date**: May 2026
 - **Metrics**:
   - Background Audio Stability: 99.9% Uptime
   - Play Store Rating: 4.8 / 5.0
@@ -45,6 +49,7 @@ The following list comprises official case studies of shipped digital products:
 - **Role/Type**: Smart Logistics & Operational Management (SaaS & Web App)
 - **Tech Stack**: Next.js 16 (App Router), Firebase, Tailwind CSS, Radix UI, Midtrans Client, jsPDF
 - **Delivery Time**: 21 days
+- **Completion Date**: May 2026
 - **Metrics**:
   - Document Generation Speed: < 200ms for Auto-PDFs
   - Transaction Reliability: 100% Midtrans Secure Integration
@@ -56,6 +61,7 @@ The following list comprises official case studies of shipped digital products:
 - **Role/Type**: Local-First Reporting Platform (Automation & Tools)
 - **Tech Stack**: React 19 (Vite), Supabase, Dexie.js (IndexedDB), Vite PWA Plugin, jsPDF
 - **Delivery Time**: 12 days
+- **Completion Date**: April 2026
 - **Metrics**:
   - Offline Data Read Speed: < 5ms
   - Architecture: Local First / Offline PWA
@@ -67,6 +73,7 @@ The following list comprises official case studies of shipped digital products:
 - **Role/Type**: Property & Room Management System (SaaS & Web App)
 - **Tech Stack**: React 19, Vite 7, Hono, tRPC, Drizzle ORM, Cloudflare R2, WhatsApp API
 - **Delivery Time**: 20 days
+- **Completion Date**: March 2026
 - **Metrics**:
   - API Type Safety: End-to-End compile-time verification via tRPC
   - Operational Automation: WhatsApp & Email sync notifications
@@ -78,6 +85,7 @@ The following list comprises official case studies of shipped digital products:
 - **Role/Type**: Premium Nature Sounds & Wellness App (Android App)
 - **Tech Stack**: Flutter, Dart, Firebase Firestore, Just_Audio, Google Play Billing
 - **Delivery Time**: 21 days
+- **Completion Date**: February 2026
 - **Metrics**:
   - Audio Mixing Capability: 4-Channel Simultaneous mixing
   - Monetization: 100% One-Time Lifetime Purchase
@@ -89,6 +97,7 @@ The following list comprises official case studies of shipped digital products:
 - **Role/Type**: Reptile Auction Platform (Android App)
 - **Tech Stack**: Flutter, Dart, Firebase Firestore, Cloudinary, Cloud Functions
 - **Delivery Time**: 45 days
+- **Completion Date**: January 2026
 - **Metrics**:
   - Auction Sync: < 200ms real-time latency
   - Authentication: Secure Firebase Authentication
