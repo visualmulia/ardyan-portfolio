@@ -1,20 +1,9 @@
 {
   "items": [
     {
-      "id": "taman-cerita",
-      "title": "Taman Cerita: Interactive Multi-Ending Web Novel Platform",
-      "category": "web-saas",
-      "categoryLabel": "SaaS & Web App",
       "shortDescription": "Interactive universe-based web novel platform featuring branching narratives, multi-ending choice mechanics, and transparent ethical monetization.",
-      "description": "Taman Cerita is a premium Indonesian interactive fiction platform that combines serialized web novels with visual novel choice mechanics. Designed with an advanced \"universe-based\" shared storytelling hierarchy, it allows readers to determine narrative paths leading to distinct alternative or secret endings. Engineered as a mobile-first PWA with Next.js App Router for server-side progress persistence and static chapter generation, backed by Supabase for PostgreSQL, auth, real-time database functions, and integrated with Midtrans Snap for secure local e-wallet transactions.",
-      "image": "/assets/taman_cerita.jpg",
-      "techStack": [
-        "Next.js (App Router)",
-        "Tailwind CSS & shadcn/ui",
-        "Framer Motion",
-        "Supabase (Postgres & Auth)",
-        "Midtrans (Snap)"
-      ],
+      "deliveryTime": "Built in 25 days",
+      "method": "AI-Augmented Content & Tech Co-Creation",
       "metrics": {
         "m1_key": "Story Engine Latency",
         "m1_val": "< 100ms Choice Sync",
@@ -24,27 +13,27 @@
         "m3_val": "Multi-Ending Graph Tracking"
       },
       "liveUrl": "https://temancerita.web.id",
-      "githubUrl": "#",
-      "deliveryTime": "Built in 25 days",
       "completionDate": "June 2026",
-      "method": "AI-Augmented Content & Tech Co-Creation",
-      "result": "MVP platform built with a fully integrated lightweight story CMS, Postgres schemas supporting cross-universe narrative resonance, and anonymous reader onboarding flows."
+      "githubUrl": "#",
+      "techStack": [
+        "Next.js (App Router)",
+        "Tailwind CSS & shadcn/ui",
+        "Framer Motion",
+        "Supabase (Postgres & Auth)",
+        "Midtrans (Snap)"
+      ],
+      "categoryLabel": "SaaS & Web App",
+      "title": "Taman Cerita: Interactive Multi-Ending Web Novel Platform",
+      "id": "taman-cerita",
+      "image": "/assets/uploads/banner-taman-cerita-ardyan-dev.png",
+      "description": "Taman Cerita is a premium Indonesian interactive fiction platform that combines serialized web novels with visual novel choice mechanics. Designed with an advanced \"universe-based\" shared storytelling hierarchy, it allows readers to determine narrative paths leading to distinct alternative or secret endings. Engineered as a mobile-first PWA with Next.js App Router for server-side progress persistence and static chapter generation, backed by Supabase for PostgreSQL, auth, real-time database functions, and integrated with Midtrans Snap for secure local e-wallet transactions.",
+      "result": "MVP platform built with a fully integrated lightweight story CMS, Postgres schemas supporting cross-universe narrative resonance, and anonymous reader onboarding flows.",
+      "category": "web-saas"
     },
     {
-      "id": "rajagacor",
-      "title": "Raja Gacor: No. 1 Bird Song Training & Competition App",
-      "category": "android",
-      "categoryLabel": "Android App",
       "shortDescription": "Indonesia's #1 bird song training and competition discovery platform, featuring advanced audio management, geo-location event tracking, and seamless hybrid monetization.",
-      "description": "A highly-optimized native Android application built with Flutter, tailored for the vibrant bird-hobbyist community in Indonesia. The app delivers high-fidelity audio training (masteran) leveraging a custom implementation of just_audio and audio_service for uninterrupted background playback. \n\nIt features live bird competition discovery integrated with real-time Firestore synchronization, device geolocating for local event tracking, and deep-linking capabilities via app_links to drive viral user acquisition. Engineered with robust offline state management using SharedPreferences, secure OAuth2 authentications, and optimized data models to ensure seamless operation under weak cellular connectivity.",
-      "image": "/assets/uploads/banner-lp.png",
-      "techStack": [
-        "Kotlin",
-        "Flutter (Dart)",
-        "Firebase",
-        "Cloud Firestore",
-        "Firebase Messaging + Local Notifications"
-      ],
+      "deliveryTime": "Built in 28 days",
+      "method": "Human-Driven, AI-Assisted",
       "metrics": {
         "m1_key": "Background Audio Stability",
         "m1_val": "99.9% Uptime",
@@ -54,27 +43,27 @@
         "m3_val": "< 150ms"
       },
       "liveUrl": "https://play.google.com/store/apps/details?id=com.masbroostudio.rajagacor",
-      "githubUrl": "#",
-      "deliveryTime": "Built in 28 days",
       "completionDate": "May 2026",
-      "method": "Human-Driven, AI-Assisted",
-      "result": "Successfully published on Google Play Store with functional hybrid monetization (AdMob + In-App Purchases) and active automated update integration."
+      "githubUrl": "#",
+      "techStack": [
+        "Kotlin",
+        "Flutter (Dart)",
+        "Firebase",
+        "Cloud Firestore",
+        "Firebase Messaging + Local Notifications"
+      ],
+      "categoryLabel": "Android App",
+      "title": "Raja Gacor: No. 1 Bird Song Training & Competition App",
+      "id": "rajagacor",
+      "image": "/assets/uploads/banner-lp.png",
+      "description": "A highly-optimized native Android application built with Flutter, tailored for the vibrant bird-hobbyist community in Indonesia. The app delivers high-fidelity audio training (masteran) leveraging a custom implementation of just_audio and audio_service for uninterrupted background playback. \n\nIt features live bird competition discovery integrated with real-time Firestore synchronization, device geolocating for local event tracking, and deep-linking capabilities via app_links to drive viral user acquisition. Engineered with robust offline state management using SharedPreferences, secure OAuth2 authentications, and optimized data models to ensure seamless operation under weak cellular connectivity.",
+      "result": "Successfully published on Google Play Store with functional hybrid monetization (AdMob + In-App Purchases) and active automated update integration.",
+      "category": "android"
     },
     {
-      "id": "logis",
-      "title": "Logis: Smart Logistics & Operational Management SaaS",
-      "category": "web-saas",
-      "categoryLabel": "SaaS & Web App",
       "shortDescription": "High-performance logistics management platform. Featuring real-time operational tracking, automated documentation (PDF), and integrated secure payment processing.",
-      "description": "A modern, scalable SaaS platform engineered with Next.js 16 and TypeScript to streamline logistics and operational workflows. The architecture leverages Firebase for real-time data synchronization and Midtrans for secure, automated transaction processing. It features sophisticated on-the-fly document generation (PDF/AutoTable), responsive UI components via Radix-UI and Tailwind CSS, and robust observability through Sentry integration. Built to handle complex business processes with high reliability, ensuring seamless performance across enterprise operations",
-      "image": "/assets/uploads/cover-thumbnail-logis.png",
-      "techStack": [
-        "Next.js 16 (App Router)",
-        "Firebase & Firebase-Admin",
-        "Tailwind CSS & Radix UI",
-        "Midtrans Client",
-        "jsPDF & html2canvas"
-      ],
+      "deliveryTime": "Built in 21 days",
+      "method": "Modular Web Architecture, Performance-Centric",
       "metrics": {
         "m1_key": "Document Generation Speed",
         "m1_val": "< 200ms (Auto-PDF)",
@@ -84,27 +73,27 @@
         "m3_val": "Sentry-Tracked Uptime"
       },
       "liveUrl": "https://www.logis-app.web.id/",
-      "githubUrl": "#",
-      "deliveryTime": "Built in 21 days",
       "completionDate": "May 2026",
-      "method": "Modular Web Architecture, Performance-Centric",
-      "result": "Deployed as a robust SaaS tool, significantly reducing manual document processing time and enhancing operational visibility for logistics management."
+      "githubUrl": "#",
+      "techStack": [
+        "Next.js 16 (App Router)",
+        "Firebase & Firebase-Admin",
+        "Tailwind CSS & Radix UI",
+        "Midtrans Client",
+        "jsPDF & html2canvas"
+      ],
+      "categoryLabel": "SaaS & Web App",
+      "title": "Logis: Smart Logistics & Operational Management SaaS",
+      "id": "logis",
+      "image": "/assets/uploads/cover-thumbnail-logis.png",
+      "description": "A modern, scalable SaaS platform engineered with Next.js 16 and TypeScript to streamline logistics and operational workflows. The architecture leverages Firebase for real-time data synchronization and Midtrans for secure, automated transaction processing. It features sophisticated on-the-fly document generation (PDF/AutoTable), responsive UI components via Radix-UI and Tailwind CSS, and robust observability through Sentry integration. Built to handle complex business processes with high reliability, ensuring seamless performance across enterprise operations",
+      "result": "Deployed as a robust SaaS tool, significantly reducing manual document processing time and enhancing operational visibility for logistics management.",
+      "category": "web-saas"
     },
     {
-      "id": "prolog",
-      "title": "Prolog: High-Performance Local-First Web Platform",
-      "category": "automation",
-      "categoryLabel": "Automation & Tools",
       "shortDescription": "A modern, offline-capable web application built with React 19 and Dexie. Features seamless cloud synchronization via Supabase and instant local storage capabilities.",
-      "description": "Prolog is a sophisticated web application engineered for speed and reliability, utilizing the latest React 19 ecosystem. The platform implements a \"local-first\" architecture using Dexie.js for lightning-fast IndexedDB operations, ensuring critical functionality remains available even without an active internet connection. It features real-time cloud synchronization backed by Supabase for secure, scalable state management, and an integrated PDF generation engine for immediate reporting. Optimized as a PWA, Prolog delivers an app-like experience directly within the browser, balancing heavy local data processing with efficient cloud syncing.",
-      "image": "/assets/uploads/cover-prolog.png",
-      "techStack": [
-        "React 19 (Vite)",
-        "Supabase",
-        "Dexie.js",
-        "Vite PWA Plugin",
-        "jsPDF & AutoTable"
-      ],
+      "deliveryTime": "Built in 12 days",
+      "method": "Local-First Engineering, PWA-Centric",
       "metrics": {
         "m1_key": "Offline Data Read Speed",
         "m1_val": "< 5ms (IndexedDB)",
@@ -114,27 +103,27 @@
         "m3_val": "100% Client-Side Sync"
       },
       "liveUrl": "https://www.prolog.web.id/",
-      "githubUrl": "#",
-      "deliveryTime": "Built in 12 days",
       "completionDate": "April 2026",
-      "method": "Local-First Engineering, PWA-Centric",
-      "result": "Successfully deployed as a high-performance web platform, offering enterprise-grade offline reliability and seamless cross-device synchronization"
+      "githubUrl": "#",
+      "techStack": [
+        "React 19 (Vite)",
+        "Supabase",
+        "Dexie.js",
+        "Vite PWA Plugin",
+        "jsPDF & AutoTable"
+      ],
+      "categoryLabel": "Automation & Tools",
+      "title": "Prolog: High-Performance Local-First Web Platform",
+      "id": "prolog",
+      "image": "/assets/uploads/cover-prolog.png",
+      "description": "Prolog is a sophisticated web application engineered for speed and reliability, utilizing the latest React 19 ecosystem. The platform implements a \"local-first\" architecture using Dexie.js for lightning-fast IndexedDB operations, ensuring critical functionality remains available even without an active internet connection. It features real-time cloud synchronization backed by Supabase for secure, scalable state management, and an integrated PDF generation engine for immediate reporting. Optimized as a PWA, Prolog delivers an app-like experience directly within the browser, balancing heavy local data processing with efficient cloud syncing.",
+      "result": "Successfully deployed as a high-performance web platform, offering enterprise-grade offline reliability and seamless cross-device synchronization",
+      "category": "automation"
     },
     {
-      "id": "the-rover",
-      "title": "The Rover: Integrated Property & Room Management System",
-      "category": "web-saas",
-      "categoryLabel": "SaaS & Web App",
       "shortDescription": "Professional-grade property management platform. Features automated tenant booking, invoicing, maintenance tracking, and WhatsApp integration.",
-      "description": "The Rover is a comprehensive, high-performance property and room management application engineered for operational excellence. Built with a full-stack TypeScript architecture using React 19, Hono, and Drizzle ORM, it provides a seamless experience for managing tenants, bookings, and billing cycles. The platform includes mission-critical integrations such as automated WhatsApp notifications (Kirimi.id), secure file storage via Cloudflare R2, and transactional email services (Resend). Designed for scalability and maintainability, it features built-in automated migration workflows, tRPC-based type-safe API communication, and comprehensive testing suites to ensure production-level reliability.",
-      "image": "/assets/uploads/cover-the-rover.png",
-      "techStack": [
-        "React 19 & Vite 7",
-        "Hono & tRPC",
-        "Drizzle ORM",
-        "Cloudflare R2",
-        "WhatsApp API "
-      ],
+      "deliveryTime": "Built in 20 days",
+      "method": "Type-Safe Fullstack Architecture",
       "metrics": {
         "m1_key": "API Type Safety",
         "m1_val": "End-to-End via tRPC",
@@ -144,26 +133,27 @@
         "m3_val": "Drizzle ORM Optimization"
       },
       "liveUrl": "https://therover.web.id",
-      "githubUrl": "#",
-      "deliveryTime": "Built in 20 days",
       "completionDate": "March 2026",
-      "method": "Type-Safe Fullstack Architecture",
-      "result": "Deployed as an all-in-one property management hub, successfully automating complex billing, tenant communications, and maintenance tracking workflows"
+      "githubUrl": "#",
+      "techStack": [
+        "React 19 & Vite 7",
+        "Hono & tRPC",
+        "Drizzle ORM",
+        "Cloudflare R2",
+        "WhatsApp API "
+      ],
+      "categoryLabel": "SaaS & Web App",
+      "title": "The Rover: Integrated Property & Room Management System",
+      "id": "the-rover",
+      "image": "/assets/uploads/cover-the-rover.png",
+      "description": "The Rover is a comprehensive, high-performance property and room management application engineered for operational excellence. Built with a full-stack TypeScript architecture using React 19, Hono, and Drizzle ORM, it provides a seamless experience for managing tenants, bookings, and billing cycles. The platform includes mission-critical integrations such as automated WhatsApp notifications (Kirimi.id), secure file storage via Cloudflare R2, and transactional email services (Resend). Designed for scalability and maintainability, it features built-in automated migration workflows, tRPC-based type-safe API communication, and comprehensive testing suites to ensure production-level reliability.",
+      "result": "Deployed as an all-in-one property management hub, successfully automating complex billing, tenant communications, and maintenance tracking workflows",
+      "category": "web-saas"
     },
     {
-      "id": "zenbird",
-      "title": "ZenBird: Premium Nature Sounds & Wellness",
-      "category": "android",
-      "categoryLabel": "Android App",
       "shortDescription": "Premium audio-centric wellness app. Features 4-channel sound mixing, 3D spatial studio, and haptic-guided breathwork for sleep and productivity.",
-      "description": "A sophisticated Flutter-based wellness application engineered for immersive audio experiences. Built with just_audio and custom audio_service implementations to support high-fidelity multi-channel mixing, allowing users to layer ambient soundscapes with granular volume control. Features a 3D Spatial Studio for psychoacoustic sound positioning, synchronized haptic-visual breathwork, and Pomodoro-based Deep Focus timers. Optimized with advanced caching mechanisms for seamless content delivery and a clean, subscription-free \"lifetime\" monetization model via Google Play Billing",
-      "image": "/assets/uploads/banner-zenbird-untuk-ardyan-dev.png",
-      "techStack": [
-        "Flutter (Dart)",
-        "Firebase Firestore",
-        "Just_Audio",
-        "Google Play Billing"
-      ],
+      "deliveryTime": "Built in 21 days",
+      "method": "Performance-First, User-Centric Design",
       "metrics": {
         "m1_key": "Audio Mixing Capability",
         "m1_val": "4-Channel Simultaneous",
@@ -173,27 +163,26 @@
         "m3_val": "Zero Subscription Churn"
       },
       "liveUrl": "https://zenbird.web.id",
-      "githubUrl": "#",
-      "deliveryTime": "Built in 21 days",
       "completionDate": "February 2026",
-      "method": "Performance-First, User-Centric Design",
-      "result": "Successfully launched with lifetime-access value proposition, resulting in high organic user retention and 5-star feedback on spatial audio quality."
-    },
-    {
-      "id": "morphbid",
-      "title": "MorphBid: Indonesia's #1 Reptile Auction Platform",
-      "category": "android",
-      "categoryLabel": "Android App",
-      "shortDescription": "The ultimate marketplace for reptile enthusiasts. Featuring secure real-time bidding, integrated payment gateways, and community-driven auction events.",
-      "description": "A comprehensive, scalable mobile auction ecosystem designed for the Indonesian reptile community. Built with Flutter, the platform utilizes Firebase Firestore and Cloud Functions to deliver low-latency real-time bidding updates  . It integrates advanced image processing via Cloudinary for high-quality pet cataloging, secure user authentication through Google Sign-In, and a robust notification system powered by Firebase Messaging  . The architecture is optimized for performance, featuring secure in-app purchasing and geolocator-based event tracking for local auctions.",
-      "image": "/assets/uploads/banner-morphbid-untuk-ardyan-dev.png",
+      "githubUrl": "#",
       "techStack": [
         "Flutter (Dart)",
         "Firebase Firestore",
-        "Cloudinary",
-        "Google Mobile Ads & IAP",
-        "Cloud Functions"
+        "Just_Audio",
+        "Google Play Billing"
       ],
+      "categoryLabel": "Android App",
+      "title": "ZenBird: Premium Nature Sounds & Wellness",
+      "id": "zenbird",
+      "image": "/assets/uploads/banner-zenbird-untuk-ardyan-dev.png",
+      "description": "A sophisticated Flutter-based wellness application engineered for immersive audio experiences. Built with just_audio and custom audio_service implementations to support high-fidelity multi-channel mixing, allowing users to layer ambient soundscapes with granular volume control. Features a 3D Spatial Studio for psychoacoustic sound positioning, synchronized haptic-visual breathwork, and Pomodoro-based Deep Focus timers. Optimized with advanced caching mechanisms for seamless content delivery and a clean, subscription-free \"lifetime\" monetization model via Google Play Billing",
+      "result": "Successfully launched with lifetime-access value proposition, resulting in high organic user retention and 5-star feedback on spatial audio quality.",
+      "category": "android"
+    },
+    {
+      "shortDescription": "The ultimate marketplace for reptile enthusiasts. Featuring secure real-time bidding, integrated payment gateways, and community-driven auction events.",
+      "deliveryTime": "Built in 45 days",
+      "method": "Agile, Cloud-Native Architecture",
       "metrics": {
         "m1_key": "Auction Real-Time Sync",
         "m1_val": "< 200ms latency",
@@ -203,11 +192,22 @@
         "m3_val": "Firebase Authenticated"
       },
       "liveUrl": "https://play.google.com/store/apps/details?id=com.morphbid.app&pcampaignid=web_share",
-      "githubUrl": "#",
-      "deliveryTime": "Built in 45 days",
       "completionDate": "January 2026",
-      "method": "Agile, Cloud-Native Architecture",
-      "result": "Successfully granted production access on Google Play, facilitating secure community auctions with high-performance real-time data handling"
+      "githubUrl": "#",
+      "techStack": [
+        "Flutter (Dart)",
+        "Firebase Firestore",
+        "Cloudinary",
+        "Google Mobile Ads & IAP",
+        "Cloud Functions"
+      ],
+      "categoryLabel": "Android App",
+      "title": "MorphBid: Indonesia's #1 Reptile Auction Platform",
+      "id": "morphbid",
+      "image": "/assets/uploads/banner-morphbid-untuk-ardyan-dev.png",
+      "description": "A comprehensive, scalable mobile auction ecosystem designed for the Indonesian reptile community. Built with Flutter, the platform utilizes Firebase Firestore and Cloud Functions to deliver low-latency real-time bidding updates  . It integrates advanced image processing via Cloudinary for high-quality pet cataloging, secure user authentication through Google Sign-In, and a robust notification system powered by Firebase Messaging  . The architecture is optimized for performance, featuring secure in-app purchasing and geolocator-based event tracking for local auctions.",
+      "result": "Successfully granted production access on Google Play, facilitating secure community auctions with high-performance real-time data handling",
+      "category": "android"
     }
   ]
 }
