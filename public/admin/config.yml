@@ -48,3 +48,18 @@ collections:
               - { label: "Delivery Time", name: "deliveryTime", widget: "string", hint: "e.g., Built in 14 days" }
               - { label: "Methodology", name: "method", widget: "string", hint: "e.g., AI-Assisted, Human-Validated" }
               - { label: "Outcome Result", name: "result", widget: "string", hint: "e.g., 15 stores onboarded, 0 downtime" }
+
+  - name: "publications_collection"
+    label: "Publications Management"
+    folder: "src/content/publications"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string", hint: "Unique URL friendly path (e.g., how-restaurants-use-ai)" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "select", options: ["Design Thinking", "Ai Today"] }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - { label: "Cover Image", name: "image", widget: "image" }
+      - { label: "Body", name: "body", widget: "markdown" }

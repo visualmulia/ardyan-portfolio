@@ -1,0 +1,169 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "AI-Augmented Product Builder with 15 years of design thinking. Building SaaS, Android apps, Chrome extensions, and automation." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content={description}>
+    <meta name="keywords" content="AI product builder, async developer, Indonesia SaaS developer, landing page designer, automation expert, no-meeting developer, product thinking, system architecture, fast delivery">
+    <meta name="author" content="Ardyan">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ardyan.web.id/">
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:image" content="/assets/og_image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ardyan.web.id/">
+    <meta property="twitter:title" content={title}>
+    <meta property="twitter:description" content={description}>
+    <meta property="twitter:image" content="/assets/og_image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+    <title>{title}</title>
+
+    <!-- FontAwesome & Icon Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS Styles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json" is:raw>
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://ardyan.web.id/#webpage",
+          "url": "https://ardyan.web.id/",
+          "name": "Ardyan | AI-Augmented Product Builder — SaaS, Apps, Automation",
+          "description": "AI-Augmented Product Builder with 15 years of design thinking. Building SaaS, Android apps, Chrome extensions, and automation.",
+          "datePublished": "2026-06-13T08:00:00+08:00",
+          "dateModified": "2026-06-27T00:58:00+08:00",
+          "about": {
+            "@id": "https://ardyan.web.id/#service-organization"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ardyan.web.id/#person",
+          "name": "Ardyan Permana",
+          "alternateName": "Ardyan",
+          "url": "https://ardyan.web.id/",
+          "image": "https://ardyan.web.id/assets/developer_portrait.jpg",
+          "jobTitle": "AI-Augmented Product Builder",
+          "description": "AI-Augmented Product Builder with 15 years of design thinking, specializing in SaaS MVP, Android apps, and web automation.",
+          "sameAs": [
+            "https://www.linkedin.com/in/ardyanpermana/",
+            "https://github.com/visualmulia"
+          ],
+          "knowsAbout": [
+            "Software Engineering",
+            "SaaS Architecture",
+            "Android App Development",
+            "Web Scraping",
+            "Automation",
+            "Design Thinking",
+            "User Experience Design"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://ardyan.web.id/#organization",
+          "name": "Ardyan Dev",
+          "url": "https://ardyan.web.id/",
+          "logo": "https://ardyan.web.id/assets/favicon.png",
+          "image": "https://ardyan.web.id/assets/developer_portrait.jpg",
+          "description": "Premium partner for SaaS MVP, Android apps, and automation pipelines. AI-augmented speed combined with 15 years of design thinking. Async delivery, no meetings.",
+          "sameAs": [
+            "https://www.linkedin.com/in/ardyanpermana/",
+            "https://github.com/visualmulia"
+          ],
+          "founder": {
+            "@id": "https://ardyan.web.id/#person"
+          }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://ardyan.web.id/#service-organization",
+          "name": "Ardyan Dev",
+          "url": "https://ardyan.web.id/",
+          "logo": "https://ardyan.web.id/assets/favicon.png",
+          "image": "https://ardyan.web.id/assets/developer_portrait.jpg",
+          "description": "Premium partner for SaaS MVP, Android apps, and automation pipelines. AI-augmented speed combined with 15 years of design thinking. Async delivery, no meetings.",
+          "priceRange": "$$$",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Jakarta",
+            "addressCountry": "ID"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Worldwide"
+          },
+          "parentOrganization": {
+            "@id": "https://ardyan.web.id/#organization"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Web Dev & Landing Pages",
+          "provider": {
+            "@id": "https://ardyan.web.id/#service-organization"
+          },
+          "description": "High-converting landing pages and scalable web dashboards designed with architectural precision and built with AI acceleration. No template bloat.",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "320"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Android App Development",
+          "provider": {
+            "@id": "https://ardyan.web.id/#service-organization"
+          },
+          "description": "Offline-first native mobile platforms. Seamless local SQLite/Room caching, fluid layouts, and background sync logic built with Kotlin or Flutter.",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "1200"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Scraping & Automation Bots",
+          "provider": {
+            "@id": "https://ardyan.web.id/#service-organization"
+          },
+          "description": "Cloud-native scraper pipelines and browser scripts to extract data and sync leads automatically, bypassing rate limits seamlessly.",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "USD",
+            "price": "320"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+  <slot />
+</body>
+</html>

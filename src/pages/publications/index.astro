@@ -1,0 +1,184 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const allPosts = await getCollection('publications');
+const posts = allPosts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Format Date helper
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+};
+---
+
+<Layout title="Publications & Insights | Ardyan Dev" description="Deep dives into AI engineering, SaaS architecture, and design thinking methodologies. Written by Ardyan.">
+    <!-- Subtle Grid Overlay -->
+    <div class="grid-overlay"></div>
+
+    <!-- Background Glows -->
+    <div class="cursor-glow" id="custom-cursor-glow"></div>
+
+    <!-- Header / Navbar -->
+    <header id="main-header" class="scrolled">
+        <div class="container">
+            <a href="/" class="logo" id="logo-link">
+                &lt;A/&gt; ardyan<span>.web.id</span>
+            </a>
+            
+            <nav>
+                <ul id="nav-links">
+                    <li><a href="/#about" id="nav-about-link">About</a></li>
+                    <li><a href="/#services" id="nav-services-link">Services</a></li>
+                    <li><a href="/#portfolio" id="nav-portfolio-link">Portfolio</a></li>
+                    <li><a href="/#calculator" id="nav-calculator-link">Calculator</a></li>
+                    <li><a href="/publications" class="active" id="nav-publications-link">Publications</a></li>
+                    <li><a href="/#faq" id="nav-faq-link">FAQ</a></li>
+                    <li><a href="/#contact" class="btn btn-primary nav-cta" id="nav-cta-talk">Let's Talk</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main style="padding-top: 140px; min-height: 80vh;">
+        <!-- Hero Header -->
+        <section style="padding: 60px 0 40px 0;">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 40px;">
+                    <span class="sub">Knowledge Base <span class="badge-tag-mini" style="font-size: 10px; margin-left: 8px; vertical-align: middle; background: rgba(99, 102, 241, 0.15); color: var(--color-accent); padding: 2px 8px; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3);">Updated Live</span></span>
+                    <h1 style="font-family: var(--font-heading); font-size: clamp(32px, 5vw, 56px); font-weight: 900; letter-spacing: -1px; text-transform: uppercase; color: var(--color-text-light); margin-top: 12px;">Publications & Insights</h1>
+                    <p style="font-size: 18px; color: var(--color-text-muted-light); max-width: 600px; margin: 20px auto 0 auto; line-height: 1.6;">
+                        Deep dives into system design methodology, SaaS pricing logic, AI capabilities, and architectural philosophy.
+                    </p>
+                </div>
+
+                <!-- Category filters -->
+                <div class="portfolio-filters" style="margin-bottom: 50px;">
+                    <button class="filter-btn active" data-category="all">All Articles</button>
+                    <button class="filter-btn" data-category="Design Thinking">Design Thinking</button>
+                    <button class="filter-btn" data-category="Ai Today">AI Today</button>
+                </div>
+
+                <!-- Articles Grid -->
+                {posts.length > 0 ? (
+                  <div class="projects-grid" id="publications-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 32px;">
+                      {posts.map(post => (
+                          <div class="project-card-wrapper pub-card" data-category={post.data.category} style="cursor: pointer; transition: all 0.3s ease;">
+                              <a href={`/publications/${post.slug}`} style="text-decoration: none; color: inherit;">
+                                  <div class="project-card" style="height: 100%; display: flex; flex-direction: column;">
+                                      <div class="project-card-image" style={`background-image: url('${post.data.image}'); height: 200px; background-size: cover; background-position: center; position: relative;`}>
+                                          <div class="project-card-category" style="background: var(--color-accent); color: var(--color-dark-bg); font-weight: 800; font-size: 10px; padding: 4px 10px; border-radius: 4px; position: absolute; top: 16px; left: 16px;">
+                                              {post.data.category}
+                                          </div>
+                                      </div>
+                                      <div class="project-card-content" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; padding: 24px;">
+                                          <div>
+                                              <span style="font-size: 12px; color: var(--color-accent); font-weight: 600; display: block; margin-bottom: 8px;">
+                                                  <i class="far fa-calendar-alt" style="margin-right: 6px;"></i> {formatDate(post.data.date)}
+                                              </span>
+                                              <h3 style="font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: var(--color-text-light); margin-bottom: 12px; line-height: 1.3;">
+                                                  {post.data.title}
+                                              </h3>
+                                              <p style="font-size: 14px; color: var(--color-text-muted-light); line-height: 1.6; margin-bottom: 20px;">
+                                                  {post.data.description}
+                                              </p>
+                                          </div>
+                                          <span style="font-size: 13px; font-weight: 700; color: var(--color-accent); display: flex; align-items: center; gap: 6px;">
+                                              Read Article <i class="fas fa-arrow-right" style="font-size: 11px;"></i>
+                                          </span>
+                                      </div>
+                                  </div>
+                              </a>
+                          </div>
+                      ))}
+                  </div>
+                ) : (
+                  <div style="text-align: center; padding: 80px 0; color: var(--color-text-muted-light);">
+                      <i class="far fa-folder-open" style="font-size: 48px; color: var(--color-accent); margin-bottom: 16px; opacity: 0.5;"></i>
+                      <p style="font-size: 16px;">No articles published yet. Check back soon!</p>
+                  </div>
+                )}
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <a href="/" class="logo" id="footer-logo">
+                    &lt;A/&gt; ardyan<span>.web.id</span>
+                </a>
+                <div class="footer-copyright">
+                    &copy; 2026 Ardyan. All rights reserved. <span style="opacity: 0.5; margin-left: 8px;">| Last Updated: 27 June 2026</span>
+                </div>
+                <div class="footer-links">
+                    <a href="/#about" id="footer-about">About</a>
+                    <a href="/#services" id="footer-services">Services</a>
+                    <a href="/#portfolio" id="footer-portfolio">Projects</a>
+                    <a href="/publications" id="footer-publications">Publications</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Client-side script for filters and nav toggling -->
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.getElementById('nav-links');
+
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    menuToggle.classList.toggle('active');
+                });
+            }
+
+            // Interactive category filtering
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const pubCards = document.querySelectorAll('.pub-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Reset active states
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const category = btn.getAttribute('data-category');
+
+                    pubCards.forEach(card => {
+                        const cardCat = card.getAttribute('data-category');
+                        if (category === 'all' || cardCat === category) {
+                            card.style.display = 'block';
+                            setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'scale(1)'; }, 10);
+                        } else {
+                            card.style.opacity = '0';
+                            card.style.transform = 'scale(0.95)';
+                            setTimeout(() => { card.style.display = 'none'; }, 200);
+                        }
+                    });
+                });
+            });
+
+            // Glow Cursor effect
+            const cursorGlow = document.getElementById('custom-cursor-glow');
+            if (cursorGlow) {
+                document.addEventListener('mousemove', (e) => {
+                    cursorGlow.style.left = `${e.clientX}px`;
+                    cursorGlow.style.top = `${e.clientY}px`;
+                });
+            }
+        });
+    </script>
+</Layout>
