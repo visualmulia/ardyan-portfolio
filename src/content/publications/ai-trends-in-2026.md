@@ -1,9 +1,12 @@
 ---
 title: "AI Trends in 2026: The Shift Towards Autonomous Agentic Workflows"
-date: "2026-07-11"
-category: "Ai Today"
-description: "An overview of how AI tools are transitioning from chat-based assistants to proactive, multi-agent systems that autonomously solve complex engineering and business tasks."
-image: "/assets/uploads/cover-prolog.png"
+slug: how-restaurants-use-ai
+date: 2026-07-11
+category: Ai Today
+description: An overview of how AI tools are transitioning from chat-based
+  assistants to proactive, multi-agent systems that autonomously solve complex
+  engineering and business tasks.
+image: /assets/uploads/ai-trends-in-2026.png
 ---
 
 The landscape of artificial intelligence has undergone a rapid evolution. While 2023 and 2024 were dominated by large language models acting as conversational chat interfaces (e.g., prompt-and-response), 2026 marks a structural transition. 
