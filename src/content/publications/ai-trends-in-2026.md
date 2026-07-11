@@ -1,6 +1,6 @@
 ---
 title: "AI Trends in 2026: The Shift Towards Autonomous Agentic Workflows"
-slug: how-restaurants-use-ai
+slug: shift-towards-autonomous-agentic
 date: 2026-07-11
 category: Ai Today
 description: An overview of how AI tools are transitioning from chat-based
