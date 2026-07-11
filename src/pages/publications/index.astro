@@ -54,9 +54,9 @@ const formatDate = (date: Date) => {
         <section style="padding: 60px 0 40px 0;">
             <div class="container">
                 <div class="section-header" style="text-align: center; margin-bottom: 40px;">
-                    <span class="sub">Knowledge Base <span class="badge-tag-mini" style="font-size: 10px; margin-left: 8px; vertical-align: middle; background: rgba(99, 102, 241, 0.15); color: var(--color-accent); padding: 2px 8px; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.3);">Updated Live</span></span>
-                    <h1 style="font-family: var(--font-heading); font-size: clamp(32px, 5vw, 56px); font-weight: 900; letter-spacing: -1px; text-transform: uppercase; color: var(--color-text-light); margin-top: 12px;">Publications & Insights</h1>
-                    <p style="font-size: 18px; color: var(--color-text-muted-light); max-width: 600px; margin: 20px auto 0 auto; line-height: 1.6;">
+                    <span class="sub">Knowledge Base <span class="badge-tag-mini" style="font-size: 10px; margin-left: 8px; vertical-align: middle; background: rgba(99, 102, 241, 0.08); color: var(--color-ai-indigo); padding: 2px 8px; border-radius: 12px; border: 1px solid rgba(99, 102, 241, 0.2);">Updated Live</span></span>
+                    <h1 style="font-family: var(--font-heading); font-size: clamp(32px, 5vw, 56px); font-weight: 900; letter-spacing: -1px; text-transform: uppercase; color: var(--color-text-dark); margin-top: 12px;">Publications & Insights</h1>
+                    <p style="font-size: 18px; color: var(--color-text-muted-dark); max-width: 600px; margin: 20px auto 0 auto; line-height: 1.6;">
                         Deep dives into system design methodology, SaaS pricing logic, AI capabilities, and architectural philosophy.
                     </p>
                 </div>
@@ -182,3 +182,17 @@ const formatDate = (date: Date) => {
         });
     </script>
 </Layout>
+
+<style>
+    /* Override filter buttons for light theme */
+    :global(.filter-btn) {
+        background: rgba(0, 0, 0, 0.03) !important;
+        border: 1px solid rgba(0, 0, 0, 0.08) !important;
+        color: var(--color-text-muted-dark) !important;
+    }
+    :global(.filter-btn:hover), :global(.filter-btn.active) {
+        background-color: var(--color-accent) !important;
+        color: var(--color-text-dark) !important;
+        border-color: var(--color-accent) !important;
+    }
+</style>
