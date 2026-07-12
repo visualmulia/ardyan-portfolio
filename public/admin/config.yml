@@ -8,14 +8,14 @@ backend:
   base_url: https://www.ardyan.web.id
   auth_endpoint: api/auth
 
-media_folder: assets/uploads
+media_folder: public/assets/uploads
 public_folder: /assets/uploads
 
 collections:
   - name: "projects_collection"
     label: "Portfolio Management"
     files:
-      - file: "data/projects.json"
+      - file: "public/data/projects.json"
         name: "projects"
         label: "Portfolio Projects List"
         format: "json"
