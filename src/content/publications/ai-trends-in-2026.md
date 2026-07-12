@@ -6,7 +6,7 @@ category: Ai Today
 description: An overview of how AI tools are transitioning from chat-based
   assistants to proactive, multi-agent systems that autonomously solve complex
   engineering and business tasks.
-image: /assets/uploads/minimize.png
+image: /assets/uploads/featured-2.png
 ---
 
 The landscape of artificial intelligence has undergone a rapid evolution. While 2023 and 2024 were dominated by large language models acting as conversational chat interfaces (e.g., prompt-and-response), 2026 marks a structural transition. 
