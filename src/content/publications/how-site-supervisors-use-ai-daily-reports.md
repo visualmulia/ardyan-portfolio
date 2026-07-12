@@ -1,10 +1,12 @@
 ---
-title: "How Site Supervisors Use AI to Automate Daily Reports From Voice Memos"
+title: How Site Supervisors Use AI to Automate Daily Reports From Voice Memos
 slug: site-supervisors-use-ai-daily-reports
 date: 2026-07-12
 category: Design Thinking
-description: "A practical guide on how construction and operational supervisors use voice memos and custom AI workflows to slash daily paperwork from 45 minutes to 90 seconds."
-image: "/assets/uploads/featured-01.png"
+description: A practical guide on how construction and operational supervisors
+  use voice memos and custom AI workflows to slash daily paperwork from 45
+  minutes to 90 seconds.
+image: /assets/uploads/featured-03.png
 ---
 
 Most site supervisors write daily reports the same way: at the kitchen table late at night, trying to recall what happened on a 12-hour day. The reports take 30 to 45 minutes, miss half the details, and arrive in systems like Procore or BuilderTREND a day late.
