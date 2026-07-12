@@ -1,9 +1,12 @@
 ---
-title: "How Restaurant Groups Use AI for Menu Pricing & Margin Optimization"
-date: "2026-07-12"
-category: "Design Thinking"
-description: "An in-depth analysis of how modern hospitality brands leverage machine learning models to analyze customer behavior, optimize menu pricing, and protect margins in real-time."
-image: "/assets/uploads/banner-lp.png"
+title: How Restaurant Groups Use AI for Menu Pricing & Margin Optimization
+slug: ai-profits-revealed
+date: 2026-07-12
+category: Design Thinking
+description: An in-depth analysis of how modern hospitality brands leverage
+  machine learning models to analyze customer behavior, optimize menu pricing,
+  and protect margins in real-time.
+image: /assets/uploads/featured-01.png
 ---
 
 In the highly competitive food and beverage sector, margin pressure is a constant challenge. Rising ingredient costs, supply chain fluctuations, and changing labor dynamics mean that static menu pricing is no longer sufficient. Modern hospitality groups are turning to artificial intelligence and predictive modeling to solve this problem dynamically.
