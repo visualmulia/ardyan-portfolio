@@ -1,10 +1,12 @@
 ---
-title: "How Real Estate Agents Use AI to Generate CMAs in Minutes"
+title: How Real Estate Agents Use AI to Generate CMAs in Minutes
 slug: real-estate-agents-use-ai-cma
 date: 2026-07-13
 category: Design Thinking
-description: "A step-by-step guide showing how residential real estate agents leverage custom AI prompts and clean MLS data to draft Comparative Market Analysis (CMA) reports in under 45 minutes."
-image: "/assets/uploads/featured-01.png"
+description: A step-by-step guide showing how residential real estate agents
+  leverage custom AI prompts and clean MLS data to draft Comparative Market
+  Analysis (CMA) reports in under 45 minutes.
+image: /assets/uploads/featured-05-a.png
 ---
 
 Most residential real estate agents spend 2 to 4 hours building a Comparative Market Analysis (CMA). They pull comps from the MLS, calculate adjustments by hand, write individual property commentaries, and assemble listing decks. 
