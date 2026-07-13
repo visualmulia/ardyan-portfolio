@@ -17,9 +17,22 @@ This is not a memory problem. The supervisor knows exactly what happened on site
 
 AI is the cleanest tool we have to take that documentation tax to zero.
 
+## Quick Answer: How Site Supervisors Use AI for Daily Logs
+Site supervisors use AI to automate daily logs by recording a 90-second voice memo describing site activities during their drive home. A foundation-model AI transcribes the audio, understands construction-specific trade jargon, formats the notes into standard daily log sections (weather, manpower, deliveries, safety), and pushes the clean data directly into systems like Procore or BuilderTREND via custom APIs.
+
 ## The Workflow: From 90-Second Voice Memo to Structured Report
 
 Instead of sitting at a laptop at night, the supervisor records a 90-second voice memo on the drive home, uploads it to an AI-augmented pipeline, and gets a structured daily report in 30 seconds. They review it once, fix any trade names or dimensions, and hit submit. The 9 PM kitchen-table session disappears.
+
+### Comparison: Traditional Paperwork vs. AI Voice Reporting
+
+| Feature / Parameter | Traditional Daily Reporting | AI-Augmented Voice Reporting |
+| :--- | :--- | :--- |
+| **Time Required** | 30 to 45 minutes of typing at the end of the day | 90 seconds of speech + 30 seconds of AI processing |
+| **Accuracy & Detail** | Low (written late at night, missing micro-details) | High (captured fresh, including precise trade counts) |
+| **Ingestion Flow** | Manual typing into Procore/BuilderTREND | Automated sync from voice to database via webhook APIs |
+| **Compliance & Audit** | High skip rate, leading to closeout claims exposure | 100% consistent log creation, protecting project margins |
+
 
 This process works because modern foundation models can do three things that generic voice-to-text cannot:
 
