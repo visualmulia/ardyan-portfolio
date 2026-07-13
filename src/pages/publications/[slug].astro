@@ -23,7 +23,17 @@ const formatDate = (date: Date) => {
 };
 ---
 
-<Layout title={`${post.data.title} | Ardyan Dev Publications`} description={post.data.description}>
+<Layout 
+    title={`${post.data.title} | Ardyan Dev Publications`} 
+    description={post.data.description}
+    articleData={{
+      title: post.data.title,
+      description: post.data.description,
+      publishDate: post.data.date,
+      slug: post.slug || post.data.slug,
+      image: post.data.image
+    }}
+>
     <!-- Subtle Grid Overlay -->
     <div class="grid-overlay"></div>
 
@@ -241,5 +251,41 @@ const formatDate = (date: Date) => {
         color: var(--color-text-dark);
         padding: 0;
         font-size: 14px;
+    }
+
+    .article-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 32px 0;
+        font-size: 15px;
+        line-height: 1.5;
+        border: 1px solid var(--color-light-border);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .article-content th, .article-content td {
+        padding: 14px 16px;
+        text-align: left;
+        border-bottom: 1px solid var(--color-light-border);
+    }
+
+    .article-content th {
+        background-color: rgba(99, 102, 241, 0.04);
+        color: var(--color-text-dark);
+        font-weight: 800;
+        font-family: var(--font-heading);
+    }
+
+    .article-content td {
+        color: var(--color-text-muted-dark);
+    }
+
+    .article-content tr:last-child td {
+        border-bottom: none;
+    }
+
+    .article-content tr:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.01);
     }
 </style>
