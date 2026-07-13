@@ -1,10 +1,12 @@
 ---
-title: "How to Build a Private AI Agent Offline Without API Keys"
+title: How to Build a Private AI Agent Offline Without API Keys
 slug: build-private-ai-agent-offline-without-api-keys
 date: 2026-07-13
 category: Ai Today
-description: "A complete developer's guide to building a fully offline AI agent using Ollama, small language models, and a custom Python agent loop. Zero cloud costs, complete data privacy."
-image: "/assets/uploads/featured-2.png"
+description: A complete developer's guide to building a fully offline AI agent
+  using Ollama, small language models, and a custom Python agent loop. Zero
+  cloud costs, complete data privacy.
+image: /assets/uploads/featured-04.png
 ---
 
 Most AI agent tutorials lock you into cloud APIs that charge you for every single token. A typical GPT-4 agent handling 100 multi-step tasks per day can easily cost $50 to $150 per month in raw API fees. 
