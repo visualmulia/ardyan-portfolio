@@ -174,57 +174,46 @@ const projects = projectsData.items;
                             <div class="section-label">06 / FEATURED SHIPPED PRODUCTS</div>
                             
                             <div class="products-grid">
-                                <!-- Product 1: Taman Cerita -->
-                                <div class="product-card">
-                                    <div class="prod-header">
-                                        <h4>Taman Cerita</h4>
-                                        <span class="prod-date">25 Days</span>
-                                    </div>
-                                    <p class="prod-desc">Web novel platform with branching narrative graphs and Midtrans payment integration.</p>
-                                    <div class="prod-meta">
-                                        <span class="prod-tech">Next.js / Supabase</span>
-                                        <span class="prod-metric">Latency: &lt;100ms</span>
-                                    </div>
-                                </div>
+                                {projects.map((project) => {
+                                    // Determine a primary metric value to display
+                                    let metricVal = "";
+                                    if (project.metrics) {
+                                        if (project.id === 'rajagacor') {
+                                            metricVal = `Rating: ${project.metrics.m2_val}`;
+                                        } else if (project.id === 'zenbird') {
+                                            metricVal = `Mixer: ${project.metrics.m1_val}`;
+                                        } else if (project.id === 'taman-cerita') {
+                                            metricVal = `Latency: ${project.metrics.m1_val}`;
+                                        } else if (project.id === 'logis') {
+                                            metricVal = `PDF: ${project.metrics.m1_val.replace(' (Auto-PDF)', '')}`;
+                                        } else if (project.id === 'prolog') {
+                                            metricVal = `Offline: ${project.metrics.m1_val.replace(' (IndexedDB)', '')}`;
+                                        } else if (project.id === 'the-rover') {
+                                            metricVal = `API: ${project.metrics.m1_val.replace('End-to-End via ', '')}`;
+                                        } else if (project.id === 'morphbid') {
+                                            metricVal = `Sync: ${project.metrics.m1_val}`;
+                                        } else {
+                                            metricVal = project.metrics.m1_val ? `Metric: ${project.metrics.m1_val}` : "";
+                                        }
+                                    }
+                                    
+                                    // Format tech stack preview (show top 3)
+                                    const techPreview = project.techStack ? project.techStack.slice(0, 3).join(' / ') : "";
 
-                                <!-- Product 2: Raja Gacor -->
-                                <div class="product-card">
-                                    <div class="prod-header">
-                                        <h4>Raja Gacor</h4>
-                                        <span class="prod-date">28 Days</span>
-                                    </div>
-                                    <p class="prod-desc">Bird song training and competition mobile app with custom background audio services.</p>
-                                    <div class="prod-meta">
-                                        <span class="prod-tech">Flutter / Kotlin / Firebase</span>
-                                        <span class="prod-metric">Rating: 4.8/5.0</span>
-                                    </div>
-                                </div>
-
-                                <!-- Product 3: Logis SaaS -->
-                                <div class="product-card">
-                                    <div class="prod-header">
-                                        <h4>Logis SaaS</h4>
-                                        <span class="prod-date">21 Days</span>
-                                    </div>
-                                    <p class="prod-desc">Logistics operational PWA with real-time tracking and automated PDF bill generation.</p>
-                                    <div class="prod-meta">
-                                        <span class="prod-tech">Next.js / Firebase / jsPDF</span>
-                                        <span class="prod-metric">PDF: &lt;200ms Gen</span>
-                                    </div>
-                                </div>
-
-                                <!-- Product 4: Prolog -->
-                                <div class="product-card">
-                                    <div class="prod-header">
-                                        <h4>Prolog</h4>
-                                        <span class="prod-date">12 Days</span>
-                                    </div>
-                                    <p class="prod-desc">High-performance local-first PWA featuring offline IndexedDB client-to-cloud sync.</p>
-                                    <div class="prod-meta">
-                                        <span class="prod-tech">React 19 / Dexie / Supabase</span>
-                                        <span class="prod-metric">Read: &lt;5ms local</span>
-                                    </div>
-                                </div>
+                                    return (
+                                        <div class="product-card">
+                                            <div class="prod-header">
+                                                <h4>{project.title.split(':')[0]}</h4>
+                                                <span class="prod-date">{project.deliveryTime}</span>
+                                            </div>
+                                            <p class="prod-desc">{project.shortDescription || project.description}</p>
+                                            <div class="prod-meta">
+                                                <span class="prod-tech">{techPreview}</span>
+                                                {metricVal && <span class="prod-metric">{metricVal}</span>}
+                                            </div>
+                                        </div>
+                                    );
+                                })}
                             </div>
                         </div>
                     </section>
