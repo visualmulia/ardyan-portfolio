@@ -1,0 +1,709 @@
+---
+import Layout from '../layouts/Layout.astro';
+import projectsData from '../../public/data/projects.json';
+
+// Group projects by category
+const projects = projectsData.items;
+---
+
+<Layout title="Resume | Ardyan Permana — AI-Augmented Product Builder" description="Professional resume of Ardyan Permana, AI-Augmented Product Builder & Project Manager. Specializing in Next.js, Flutter, Kotlin, and automated workflows.">
+    <!-- Subtle Grid Overlay -->
+    <div class="grid-overlay no-print"></div>
+
+    <!-- Background Glows -->
+    <div class="cursor-glow no-print" id="custom-cursor-glow"></div>
+
+    <main class="resume-main-container">
+        <div class="resume-wrapper">
+            <!-- Back to Home and Print Actions (Hidden in Print) -->
+            <div class="resume-actions no-print">
+                <a href="/" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                <button onclick="window.print()" class="btn btn-secondary print-btn">
+                    <i class="fas fa-print"></i> Print / Save PDF
+                </button>
+            </div>
+
+            <!-- Main Resume Sheet -->
+            <div class="resume-sheet">
+                <!-- Header Info -->
+                <header class="resume-header">
+                    <div class="header-left">
+                        <h1>Ardyan Permana</h1>
+                        <p class="title-tag">AI-Augmented Product Builder</p>
+                        <p class="summary-meta no-print">Bridging 15 Years of Physical PM & Design Thinking with Rapid Software Engineering</p>
+                    </div>
+                    <div class="header-right">
+                        <ul class="contact-list">
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:visualmulia@gmail.com">visualmulia@gmail.com</a></li>
+                            <li><i class="fas fa-globe"></i> <a href="https://ardyan.web.id">ardyan.web.id</a></li>
+                            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ardyanpermana/" target="_blank">linkedin.com/in/ardyanpermana</a></li>
+                            <li><i class="fab fa-github"></i> <a href="https://github.com/visualmulia" target="_blank">github.com/visualmulia</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> Jakarta & Bali, Indonesia</li>
+                        </ul>
+                    </div>
+                </header>
+
+                <hr class="resume-divider" />
+
+                <!-- Professional Summary -->
+                <section class="resume-section">
+                    <h2>Professional Summary</h2>
+                    <p class="summary-text">
+                        An AI-augmented product builder and manager with a unique foundation in Architecture and physical construction project management. Powered by 15 years of design thinking, I translate complex stakeholder requirements into high-performance software architectures (SaaS, Mobile, and local-first PWAs). Leveraging AI-augmented workflows, I build and ship production-grade products with 10x speed, bridging the gap between rigorous project execution and rapid digital shipping.
+                    </p>
+                </section>
+
+                <hr class="resume-divider" />
+
+                <!-- Core Expertise & Technologies -->
+                <section class="resume-section">
+                    <h2>Core Expertise & Technologies</h2>
+                    <div class="skills-grid">
+                        <div class="skills-category">
+                            <h3>Languages & Frameworks</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">React 19</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Hono</span>
+                                <span class="tag">tRPC</span>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h3>Databases & Cloud</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Supabase</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Firestore</span>
+                                <span class="tag">Cloudflare R2</span>
+                                <span class="tag">Drizzle ORM</span>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h3>Automation & Integrations</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Web Scraping</span>
+                                <span class="tag">WhatsApp API</span>
+                                <span class="tag">Payment Gateway (Midtrans)</span>
+                                <span class="tag">Vite PWA</span>
+                                <span class="tag">jsPDF / AutoTable</span>
+                            </div>
+                        </div>
+                        <div class="skills-category">
+                            <h3>Methodology & Management</h3>
+                            <div class="skill-tags">
+                                <span class="tag">Agile Project Management</span>
+                                <span class="tag">Design Thinking</span>
+                                <span class="tag">Local-First Architecture</span>
+                                <span class="tag">System Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="resume-divider" />
+
+                <!-- Professional Experience -->
+                <section class="resume-section">
+                    <h2>Professional Experience</h2>
+                    
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div class="exp-title-company">
+                                <h3>AI-Augmented Software Builder</h3>
+                                <span class="company">Freelance / Masbroo Studio</span>
+                            </div>
+                            <span class="date">2025 – Present</span>
+                        </div>
+                        <p class="exp-desc">
+                            Design, engineer, and ship custom digital platforms (PWAs, native Android applications, SaaS dashboards) for local and international clients, utilizing AI-assisted loops to accelerate development from months to days.
+                        </p>
+                        <ul class="bullet-list">
+                            <li><strong>Rapid Delivery:</strong> Shipped 7 production-ready platforms in under 6 months, managing the entire lifecycle from database schema design to Vercel/Play Store deployments.</li>
+                            <li><strong>Taman Cerita:</strong> Shipped an interactive serial novel PWA in 25 days using Next.js, Supabase, and Midtrans, achieving choice-sync latencies of &lt;100ms.</li>
+                            <li><strong>Raja Gacor & ZenBird:</strong> Shipped bird-hobbyist and wellness audio platforms in Flutter/Kotlin in under 28 days, achieving a 4.8/5.0 Play Store rating.</li>
+                            <li><strong>Logis SaaS:</strong> Built a smart logistics management platform in 21 days with Next.js and Firebase, automating invoice PDF generations in &lt;200ms.</li>
+                            <li><strong>Prolog:</strong> Engineered a local-first PWA in 12 days using Dexie.js (IndexedDB) and Supabase, providing &lt;5ms offline read latencies.</li>
+                        </ul>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div class="exp-title-company">
+                                <h3>Project Manager</h3>
+                                <span class="company">PT. Majumapan Bangunindo</span>
+                            </div>
+                            <span class="date">2018 – Present</span>
+                        </div>
+                        <p class="exp-desc">
+                            Direct structural and architectural construction projects in Bali, managing budgets, vendor coordination, and strict engineering compliance.
+                        </p>
+                        <ul class="bullet-list">
+                            <li><strong>Physical Execution & Safety:</strong> Coordinate multi-trade contractors and engineering teams, ensuring structures conform to architectural blueprints, building codes, and safety standards.</li>
+                            <li><strong>Budget & Resource Control:</strong> Manage material procurement and labor allocations, consistently keeping project delivery costs within a ±3% margin of baseline estimates.</li>
+                            <li><strong>Cross-Disciplinary Bridge:</strong> Leverage rigorous physical project management frameworks (Gantt charts, critical path method, stakeholder alignment) to optimize digital product planning and software scoping.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <hr class="resume-divider" />
+
+                <!-- Education & Credentials -->
+                <section class="resume-section">
+                    <h2>Education & Credentials</h2>
+                    <div class="education-grid">
+                        <div class="edu-item">
+                            <div class="edu-header">
+                                <h3>Bachelor Degree in Architecture</h3>
+                                <span class="date">Jakarta, Indonesia</span>
+                            </div>
+                            <p class="school">Focus on Spatial Design, System Thinking, and Drafting Compliance</p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="resume-divider" />
+
+                <!-- Languages & Communication -->
+                <section class="resume-section">
+                    <h2>Languages & Communication</h2>
+                    <ul class="bullet-list-horizontal">
+                        <li><strong>English:</strong> Proficient (Best at written communication/documentation; standard speaking & listening for team collaboration)</li>
+                        <li><strong>Indonesian:</strong> Native</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Client-side script for standard interactions -->
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Glow Cursor effect
+            const cursorGlow = document.getElementById('custom-cursor-glow');
+            if (cursorGlow) {
+                document.addEventListener('mousemove', (e) => {
+                    cursorGlow.style.left = `${e.clientX}px`;
+                    cursorGlow.style.top = `${e.clientY}px`;
+                });
+            }
+        });
+    </script>
+</Layout>
+
+<style is:global>
+    /* ==========================================================================
+       RESUME PAGE UNIQUE STYLING (LIGHT TEMPLATE BY DEFAULT FOR MAXIMUM CRAWL)
+       ========================================================================== */
+
+    .resume-main-container {
+        padding: 120px 0 80px 0;
+        background-color: var(--color-light-bg);
+        min-height: 100vh;
+        color: var(--color-text-dark);
+        font-family: var(--font-body);
+    }
+
+    .resume-wrapper {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+
+    .resume-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    .resume-actions .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--color-ai-indigo);
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 14px;
+        transition: var(--transition-smooth);
+    }
+
+    .resume-actions .back-link:hover {
+        transform: translateX(-4px);
+        color: var(--color-ai-purple);
+    }
+
+    .resume-actions .print-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px 20px;
+        border-radius: var(--border-radius-sm);
+        border: 1px solid var(--color-light-border);
+        background: var(--color-light-card);
+        color: var(--color-text-dark);
+        cursor: pointer;
+        transition: var(--transition-smooth);
+    }
+
+    .resume-actions .print-btn:hover {
+        background-color: var(--color-accent);
+        border-color: var(--color-accent);
+        color: var(--color-text-dark) !important;
+        transform: translateY(-2px);
+    }
+
+    .resume-sheet {
+        background: var(--color-light-card);
+        border: 1px solid var(--color-light-border);
+        border-radius: var(--border-radius-md);
+        padding: 48px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+    }
+
+    .resume-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+
+    .resume-header h1 {
+        font-family: var(--font-heading);
+        font-size: clamp(32px, 5vw, 42px);
+        font-weight: 900;
+        letter-spacing: -1px;
+        text-transform: uppercase;
+        color: var(--color-text-dark);
+        line-height: 1.1;
+        margin-bottom: 6px;
+    }
+
+    .title-tag {
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--color-ai-indigo);
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .summary-meta {
+        font-size: 14px;
+        color: var(--color-text-muted-dark);
+        font-weight: 500;
+        max-width: 440px;
+        line-height: 1.4;
+    }
+
+    .contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        color: var(--color-text-muted-dark);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contact-list li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact-list i {
+        color: var(--color-ai-indigo);
+        width: 16px;
+        text-align: center;
+    }
+
+    .contact-list a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px dashed var(--color-light-border);
+        transition: var(--transition-smooth);
+    }
+
+    .contact-list a:hover {
+        color: var(--color-ai-indigo);
+        border-bottom-style: solid;
+    }
+
+    .resume-divider {
+        border: none;
+        border-top: 1px solid var(--color-light-border);
+        margin: 32px 0;
+    }
+
+    .resume-section h2 {
+        font-family: var(--font-heading);
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: var(--color-text-dark);
+        margin-bottom: 18px;
+        position: relative;
+    }
+
+    .summary-text {
+        font-size: 15px;
+        line-height: 1.7;
+        color: var(--color-text-muted-dark);
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 24px;
+    }
+
+    .skills-category h3 {
+        font-family: var(--font-body);
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--color-text-dark);
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .skill-tags .tag {
+        font-size: 12px;
+        font-weight: 600;
+        background-color: rgba(99, 102, 241, 0.04);
+        border: 1px solid rgba(99, 102, 241, 0.12);
+        color: var(--color-ai-indigo);
+        padding: 4px 10px;
+        border-radius: var(--border-radius-sm);
+    }
+
+    /* Experience Items */
+    .experience-item {
+        margin-bottom: 28px;
+    }
+
+    .experience-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .exp-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .exp-title-company h3 {
+        font-family: var(--font-heading);
+        font-size: 16px;
+        font-weight: 800;
+        color: var(--color-text-dark);
+        display: inline-block;
+        margin-right: 8px;
+    }
+
+    .exp-title-company .company {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--color-ai-indigo);
+        background: rgba(99, 102, 241, 0.05);
+        padding: 2px 8px;
+        border-radius: 4px;
+    }
+
+    .exp-header .date {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--color-text-muted-dark);
+    }
+
+    .exp-desc {
+        font-size: 14px;
+        color: var(--color-text-muted-dark);
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    .bullet-list {
+        padding-left: 20px;
+        font-size: 14px;
+        color: var(--color-text-muted-dark);
+        line-height: 1.6;
+    }
+
+    .bullet-list li {
+        margin-bottom: 6px;
+    }
+
+    .bullet-list li strong {
+        color: var(--color-text-dark);
+    }
+
+    /* Education Items */
+    .edu-item {
+        margin-bottom: 16px;
+    }
+
+    .edu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 4px;
+    }
+
+    .edu-header h3 {
+        font-family: var(--font-heading);
+        font-size: 15px;
+        font-weight: 800;
+        color: var(--color-text-dark);
+    }
+
+    .edu-header .date {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--color-text-muted-dark);
+    }
+
+    .school {
+        font-size: 14px;
+        color: var(--color-text-muted-dark);
+    }
+
+    /* Horizontal Bullet List */
+    .bullet-list-horizontal {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+        color: var(--color-text-muted-dark);
+    }
+
+    .bullet-list-horizontal li strong {
+        color: var(--color-text-dark);
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+        .resume-sheet {
+            padding: 24px;
+        }
+        .resume-header {
+            flex-direction: column;
+            gap: 16px;
+        }
+        .exp-header {
+            flex-direction: column;
+            gap: 4px;
+        }
+    }
+
+    /* ==========================================================================
+       CSS @MEDIA PRINT STYLING (ATS-FRIENDLY PDF RENDER)
+       ========================================================================== */
+
+    @media print {
+        @page {
+            margin: 15mm 15mm 15mm 15mm;
+            size: A4 portrait;
+        }
+
+        body, .resume-main-container {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            min-height: 0 !important;
+            font-size: 10pt !important;
+            line-height: 1.4 !important;
+        }
+
+        .no-print {
+            display: none !important;
+        }
+
+        .resume-wrapper {
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        .resume-sheet {
+            background: none !important;
+            border: none !important;
+            border-radius: 0 !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+        }
+
+        .resume-header {
+            display: grid !important;
+            grid-template-columns: 1fr auto !important;
+            gap: 20px !important;
+            align-items: start !important;
+        }
+
+        .resume-header h1 {
+            color: #000000 !important;
+            font-size: 26pt !important;
+            margin-bottom: 2pt !important;
+        }
+
+        .title-tag {
+            color: #4b5563 !important;
+            font-size: 12pt !important;
+            font-weight: bold !important;
+            margin-bottom: 4pt !important;
+        }
+
+        .contact-list {
+            font-size: 9pt !important;
+            color: #111827 !important;
+            gap: 3pt !important;
+            align-items: end !important;
+        }
+
+        .contact-list i {
+            display: none !important; /* Hide icons in print for clean look */
+        }
+
+        .contact-list a {
+            color: #000000 !important;
+            text-decoration: none !important;
+            border-bottom: none !important;
+        }
+
+        .resume-divider {
+            border-top: 1px solid #d1d5db !important;
+            margin: 12pt 0 !important;
+        }
+
+        .resume-section h2 {
+            font-size: 12pt !important;
+            color: #000000 !important;
+            margin-bottom: 8pt !important;
+            border-bottom: 1px solid #e5e7eb !important;
+            padding-bottom: 2pt !important;
+        }
+
+        .summary-text {
+            font-size: 9.5pt !important;
+            color: #374151 !important;
+        }
+
+        .skills-grid {
+            grid-template-columns: 1fr 1fr !important;
+            gap: 12pt !important;
+        }
+
+        .skills-category h3 {
+            font-size: 9pt !important;
+            color: #111827 !important;
+            margin-bottom: 4pt !important;
+        }
+
+        .skill-tags .tag {
+            font-size: 8pt !important;
+            background: none !important;
+            border: 1px solid #d1d5db !important;
+            color: #111827 !important;
+            padding: 1pt 5pt !important;
+            margin-bottom: 2pt !important;
+            border-radius: 2px !important;
+        }
+
+        .experience-item {
+            margin-bottom: 12pt !important;
+            page-break-inside: avoid !important;
+        }
+
+        .exp-header {
+            margin-bottom: 3pt !important;
+        }
+
+        .exp-title-company h3 {
+            font-size: 10pt !important;
+            color: #000000 !important;
+        }
+
+        .exp-title-company .company {
+            font-size: 9.5pt !important;
+            background: none !important;
+            color: #374151 !important;
+            font-weight: bold !important;
+            padding: 0 !important;
+        }
+
+        .exp-header .date {
+            font-size: 9pt !important;
+            color: #4b5563 !important;
+        }
+
+        .exp-desc {
+            font-size: 9pt !important;
+            color: #4b5563 !important;
+            margin-bottom: 4pt !important;
+        }
+
+        .bullet-list {
+            font-size: 9.2pt !important;
+            color: #374151 !important;
+        }
+
+        .bullet-list li {
+            margin-bottom: 3pt !important;
+        }
+
+        .bullet-list li strong {
+            color: #000000 !important;
+        }
+
+        .edu-header h3 {
+            font-size: 10pt !important;
+            color: #000000 !important;
+        }
+
+        .edu-header .date {
+            font-size: 9pt !important;
+            color: #4b5563 !important;
+        }
+
+        .school {
+            font-size: 9pt !important;
+            color: #374151 !important;
+        }
+
+        .bullet-list-horizontal {
+            font-size: 9.5pt !important;
+            color: #374151 !important;
+        }
+
+        .bullet-list-horizontal li strong {
+            color: #000000 !important;
+        }
+    }
+</style>
