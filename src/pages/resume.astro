@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import projectsData from '../../public/data/projects.json';
 
-// Group projects by category
+// Get the projects list
 const projects = projectsData.items;
 ---
 
@@ -27,157 +27,208 @@ const projects = projectsData.items;
 
             <!-- Main Resume Sheet -->
             <div class="resume-sheet">
-                <!-- Header Info -->
-                <header class="resume-header">
-                    <div class="header-left">
-                        <h1>Ardyan Permana</h1>
+                <!-- Top Structural Header -->
+                <div class="resume-header-block">
+                    <div class="header-main-info">
+                        <h1>ARDYAN PERMANA</h1>
                         <p class="title-tag">AI-Augmented Product Builder</p>
-                        <p class="summary-meta no-print">Bridging 15 Years of Physical PM & Design Thinking with Rapid Software Engineering</p>
+                        <p class="summary-meta">Bridging 15 Years of Physical PM & Design Thinking with Rapid Software Engineering</p>
                     </div>
-                    <div class="header-right">
+                    <div class="header-contact-info">
                         <ul class="contact-list">
-                            <li><i class="fas fa-envelope"></i> <a href="mailto:visualmulia@gmail.com">visualmulia@gmail.com</a></li>
-                            <li><i class="fas fa-globe"></i> <a href="https://ardyan.web.id">ardyan.web.id</a></li>
-                            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/ardyanpermana/" target="_blank">linkedin.com/in/ardyanpermana</a></li>
-                            <li><i class="fab fa-github"></i> <a href="https://github.com/visualmulia" target="_blank">github.com/visualmulia</a></li>
-                            <li><i class="fas fa-map-marker-alt"></i> Jakarta & Bali, Indonesia</li>
+                            <li><span class="label">EMAIL:</span> <a href="mailto:visualmulia@gmail.com">visualmulia@gmail.com</a></li>
+                            <li><span class="label">WEB:</span> <a href="https://ardyan.web.id">ardyan.web.id</a></li>
+                            <li><span class="label">LINKEDIN:</span> <a href="https://www.linkedin.com/in/ardyanpermana/" target="_blank">in/ardyanpermana</a></li>
+                            <li><span class="label">GITHUB:</span> <a href="https://github.com/visualmulia" target="_blank">github.com/visualmulia</a></li>
+                            <li><span class="label">LOCATION:</span> Jakarta & Bali, Indonesia</li>
                         </ul>
                     </div>
-                </header>
+                </div>
 
-                <hr class="resume-divider" />
+                <div class="architectural-grid">
+                    <!-- LEFT COLUMN (Sidebar / Tech specs) -->
+                    <aside class="resume-sidebar">
+                        <!-- Structural Blueprint Block -->
+                        <div class="sidebar-section blueprint-card">
+                            <div class="section-label">00 / DESIGN PHILOSOPHY</div>
+                            <p class="blueprint-text">
+                                Just as physical blueprints translate architectural concepts into concrete and steel, I use AI-augmented loops to translate complex business logic into clean, production-grade software architectures. 15 years of physical project management ensures structural integrity; AI delivers the shipping speed.
+                            </p>
+                        </div>
 
-                <!-- Professional Summary -->
-                <section class="resume-section">
-                    <h2>Professional Summary</h2>
-                    <p class="summary-text">
-                        An AI-augmented product builder and manager with a unique foundation in Architecture and physical construction project management. Powered by 15 years of design thinking, I translate complex stakeholder requirements into high-performance software architectures (SaaS, Mobile, and local-first PWAs). Leveraging AI-augmented workflows, I build and ship production-grade products with 10x speed, bridging the gap between rigorous project execution and rapid digital shipping.
-                    </p>
-                </section>
+                        <!-- Core Expertise & Technologies -->
+                        <div class="sidebar-section">
+                            <div class="section-label">01 / TECHNICAL EXPERTISE</div>
+                            
+                            <div class="skills-sub-group">
+                                <h4>LANGUAGES & FRAMEWORKS</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">Next.js</span>
+                                    <span class="tag">React 19</span>
+                                    <span class="tag">TypeScript</span>
+                                    <span class="tag">Flutter</span>
+                                    <span class="tag">Kotlin</span>
+                                    <span class="tag">Node.js</span>
+                                    <span class="tag">Hono</span>
+                                    <span class="tag">tRPC</span>
+                                </div>
+                            </div>
 
-                <hr class="resume-divider" />
+                            <div class="skills-sub-group">
+                                <h4>DATABASES & CLOUD</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">Supabase</span>
+                                    <span class="tag">PostgreSQL</span>
+                                    <span class="tag">Firebase</span>
+                                    <span class="tag">Firestore</span>
+                                    <span class="tag">Cloudflare R2</span>
+                                    <span class="tag">Drizzle ORM</span>
+                                </div>
+                            </div>
 
-                <!-- Core Expertise & Technologies -->
-                <section class="resume-section">
-                    <h2>Core Expertise & Technologies</h2>
-                    <div class="skills-grid">
-                        <div class="skills-category">
-                            <h3>Languages & Frameworks</h3>
-                            <div class="skill-tags">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">React 19</span>
-                                <span class="tag">TypeScript</span>
-                                <span class="tag">Flutter</span>
-                                <span class="tag">Kotlin</span>
-                                <span class="tag">Node.js</span>
-                                <span class="tag">Hono</span>
-                                <span class="tag">tRPC</span>
+                            <div class="skills-sub-group">
+                                <h4>AUTOMATION & SYNC</h4>
+                                <div class="skill-tags">
+                                    <span class="tag">Web Scraping</span>
+                                    <span class="tag">WhatsApp API</span>
+                                    <span class="tag">Midtrans (Pay)</span>
+                                    <span class="tag">Vite PWA</span>
+                                    <span class="tag">jsPDF / AutoTable</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="skills-category">
-                            <h3>Databases & Cloud</h3>
-                            <div class="skill-tags">
-                                <span class="tag">Supabase</span>
-                                <span class="tag">PostgreSQL</span>
-                                <span class="tag">Firebase</span>
-                                <span class="tag">Firestore</span>
-                                <span class="tag">Cloudflare R2</span>
-                                <span class="tag">Drizzle ORM</span>
+
+                        <!-- Education & Credentials -->
+                        <div class="sidebar-section">
+                            <div class="section-label">02 / EDUCATION</div>
+                            <div class="sidebar-edu-item">
+                                <h4>Bachelor Degree in Architecture</h4>
+                                <p class="sub-detail">Focus on Spatial Design, Systems Thinking, and Structural Compliance</p>
                             </div>
                         </div>
-                        <div class="skills-category">
-                            <h3>Automation & Integrations</h3>
-                            <div class="skill-tags">
-                                <span class="tag">Web Scraping</span>
-                                <span class="tag">WhatsApp API</span>
-                                <span class="tag">Payment Gateway (Midtrans)</span>
-                                <span class="tag">Vite PWA</span>
-                                <span class="tag">jsPDF / AutoTable</span>
+
+                        <!-- Languages -->
+                        <div class="sidebar-section">
+                            <div class="section-label">03 / LANGUAGES</div>
+                            <ul class="sidebar-lang-list">
+                                <li><strong>English:</strong> Proficient (Advanced written documentation, professional verbal communication)</li>
+                                <li><strong>Indonesian:</strong> Native</li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <!-- RIGHT COLUMN (Work experience & shipped products) -->
+                    <section class="resume-main-content">
+                        <!-- Professional Summary -->
+                        <div class="content-block">
+                            <div class="section-label">04 / PROFESSIONAL SUMMARY</div>
+                            <p class="summary-text text-highlight">
+                                Dynamic Product Builder and Project Manager with a unique cross-disciplinary foundation in Architecture and structural construction management. Over 15 years of design thinking. Translates complex stakeholder requirements into high-performance software architectures (SaaS, Mobile, and local-first PWAs). Leverages AI-augmented workflows to engineer and deploy production-grade software in days rather than months.
+                            </p>
+                        </div>
+
+                        <!-- Professional Experience -->
+                        <div class="content-block">
+                            <div class="section-label">05 / PROFESSIONAL EXPERIENCE</div>
+
+                            <!-- Experience 1 -->
+                            <div class="job-block">
+                                <div class="job-header">
+                                    <div class="job-title-company">
+                                        <h3>AI-Augmented Product Builder</h3>
+                                        <span class="company">Freelance / Masbroo Studio</span>
+                                    </div>
+                                    <span class="job-date">2025 – Present</span>
+                                </div>
+                                <p class="job-desc">
+                                    Architect and develop custom SaaS platforms, mobile applications, and PWA automation systems, leveraging AI-augmented development cycles to achieve 10x faster shipping times.
+                                </p>
+                                <ul class="job-bullets">
+                                    <li><strong>Rapid Delivery:</strong> Successfully conceptualized, built, and shipped 7 production-grade digital applications in under 6 months.</li>
+                                    <li><strong>Full-Stack Architecture:</strong> Engineered type-safe APIs, PostgreSQL database schemas, and background synchronization pipelines designed for weak network conditions.</li>
+                                </ul>
+                            </div>
+
+                            <!-- Experience 2 -->
+                            <div class="job-block">
+                                <div class="job-header">
+                                    <div class="job-title-company">
+                                        <h3>Project Manager</h3>
+                                        <span class="company">PT. Majumapan Bangunindo</span>
+                                    </div>
+                                    <span class="job-date">2018 – Present</span>
+                                </div>
+                                <p class="job-desc">
+                                    Direct structural and architectural construction projects in Bali. Lead cross-functional engineering and design teams to execute complex physical assets.
+                                </p>
+                                <ul class="job-bullets">
+                                    <li><strong>Scope & Timeline Control:</strong> Manage material procurement and labor allocations, maintaining project delivery costs within a strict ±3% baseline margin.</li>
+                                    <li><strong>Quality Assurance:</strong> Ensure building systems comply with structural blueprints, local safety regulations, and client-approved specifications.</li>
+                                    <li><strong>Methodology Integration:</strong> Adapt structural project planning frameworks (Gantt, Critical Path Method) to establish robust specifications for digital software development.</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="skills-category">
-                            <h3>Methodology & Management</h3>
-                            <div class="skill-tags">
-                                <span class="tag">Agile Project Management</span>
-                                <span class="tag">Design Thinking</span>
-                                <span class="tag">Local-First Architecture</span>
-                                <span class="tag">System Design</span>
+
+                        <!-- Selected Shipped Products -->
+                        <div class="content-block">
+                            <div class="section-label">06 / FEATURED SHIPPED PRODUCTS</div>
+                            
+                            <div class="products-grid">
+                                <!-- Product 1: Taman Cerita -->
+                                <div class="product-card">
+                                    <div class="prod-header">
+                                        <h4>Taman Cerita</h4>
+                                        <span class="prod-date">25 Days</span>
+                                    </div>
+                                    <p class="prod-desc">Web novel platform with branching narrative graphs and Midtrans payment integration.</p>
+                                    <div class="prod-meta">
+                                        <span class="prod-tech">Next.js / Supabase</span>
+                                        <span class="prod-metric">Latency: &lt;100ms</span>
+                                    </div>
+                                </div>
+
+                                <!-- Product 2: Raja Gacor -->
+                                <div class="product-card">
+                                    <div class="prod-header">
+                                        <h4>Raja Gacor</h4>
+                                        <span class="prod-date">28 Days</span>
+                                    </div>
+                                    <p class="prod-desc">Bird song training and competition mobile app with custom background audio services.</p>
+                                    <div class="prod-meta">
+                                        <span class="prod-tech">Flutter / Kotlin / Firebase</span>
+                                        <span class="prod-metric">Rating: 4.8/5.0</span>
+                                    </div>
+                                </div>
+
+                                <!-- Product 3: Logis SaaS -->
+                                <div class="product-card">
+                                    <div class="prod-header">
+                                        <h4>Logis SaaS</h4>
+                                        <span class="prod-date">21 Days</span>
+                                    </div>
+                                    <p class="prod-desc">Logistics operational PWA with real-time tracking and automated PDF bill generation.</p>
+                                    <div class="prod-meta">
+                                        <span class="prod-tech">Next.js / Firebase / jsPDF</span>
+                                        <span class="prod-metric">PDF: &lt;200ms Gen</span>
+                                    </div>
+                                </div>
+
+                                <!-- Product 4: Prolog -->
+                                <div class="product-card">
+                                    <div class="prod-header">
+                                        <h4>Prolog</h4>
+                                        <span class="prod-date">12 Days</span>
+                                    </div>
+                                    <p class="prod-desc">High-performance local-first PWA featuring offline IndexedDB client-to-cloud sync.</p>
+                                    <div class="prod-meta">
+                                        <span class="prod-tech">React 19 / Dexie / Supabase</span>
+                                        <span class="prod-metric">Read: &lt;5ms local</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-
-                <hr class="resume-divider" />
-
-                <!-- Professional Experience -->
-                <section class="resume-section">
-                    <h2>Professional Experience</h2>
-                    
-                    <div class="experience-item">
-                        <div class="exp-header">
-                            <div class="exp-title-company">
-                                <h3>AI-Augmented Software Builder</h3>
-                                <span class="company">Freelance / Masbroo Studio</span>
-                            </div>
-                            <span class="date">2025 – Present</span>
-                        </div>
-                        <p class="exp-desc">
-                            Design, engineer, and ship custom digital platforms (PWAs, native Android applications, SaaS dashboards) for local and international clients, utilizing AI-assisted loops to accelerate development from months to days.
-                        </p>
-                        <ul class="bullet-list">
-                            <li><strong>Rapid Delivery:</strong> Shipped 7 production-ready platforms in under 6 months, managing the entire lifecycle from database schema design to Vercel/Play Store deployments.</li>
-                            <li><strong>Taman Cerita:</strong> Shipped an interactive serial novel PWA in 25 days using Next.js, Supabase, and Midtrans, achieving choice-sync latencies of &lt;100ms.</li>
-                            <li><strong>Raja Gacor & ZenBird:</strong> Shipped bird-hobbyist and wellness audio platforms in Flutter/Kotlin in under 28 days, achieving a 4.8/5.0 Play Store rating.</li>
-                            <li><strong>Logis SaaS:</strong> Built a smart logistics management platform in 21 days with Next.js and Firebase, automating invoice PDF generations in &lt;200ms.</li>
-                            <li><strong>Prolog:</strong> Engineered a local-first PWA in 12 days using Dexie.js (IndexedDB) and Supabase, providing &lt;5ms offline read latencies.</li>
-                        </ul>
-                    </div>
-
-                    <div class="experience-item">
-                        <div class="exp-header">
-                            <div class="exp-title-company">
-                                <h3>Project Manager</h3>
-                                <span class="company">PT. Majumapan Bangunindo</span>
-                            </div>
-                            <span class="date">2018 – Present</span>
-                        </div>
-                        <p class="exp-desc">
-                            Direct structural and architectural construction projects in Bali, managing budgets, vendor coordination, and strict engineering compliance.
-                        </p>
-                        <ul class="bullet-list">
-                            <li><strong>Physical Execution & Safety:</strong> Coordinate multi-trade contractors and engineering teams, ensuring structures conform to architectural blueprints, building codes, and safety standards.</li>
-                            <li><strong>Budget & Resource Control:</strong> Manage material procurement and labor allocations, consistently keeping project delivery costs within a ±3% margin of baseline estimates.</li>
-                            <li><strong>Cross-Disciplinary Bridge:</strong> Leverage rigorous physical project management frameworks (Gantt charts, critical path method, stakeholder alignment) to optimize digital product planning and software scoping.</li>
-                        </ul>
-                    </div>
-                </section>
-
-                <hr class="resume-divider" />
-
-                <!-- Education & Credentials -->
-                <section class="resume-section">
-                    <h2>Education & Credentials</h2>
-                    <div class="education-grid">
-                        <div class="edu-item">
-                            <div class="edu-header">
-                                <h3>Bachelor Degree in Architecture</h3>
-                                <span class="date">Jakarta, Indonesia</span>
-                            </div>
-                            <p class="school">Focus on Spatial Design, System Thinking, and Drafting Compliance</p>
-                        </div>
-                    </div>
-                </section>
-
-                <hr class="resume-divider" />
-
-                <!-- Languages & Communication -->
-                <section class="resume-section">
-                    <h2>Languages & Communication</h2>
-                    <ul class="bullet-list-horizontal">
-                        <li><strong>English:</strong> Proficient (Best at written communication/documentation; standard speaking & listening for team collaboration)</li>
-                        <li><strong>Indonesian:</strong> Native</li>
-                    </ul>
-                </section>
+                    </section>
+                </div>
             </div>
         </div>
     </main>
@@ -198,22 +249,40 @@ const projects = projectsData.items;
 </Layout>
 
 <style is:global>
+    /* Override global fixed header from style.css specifically for the resume page */
+    body:has(.resume-main-container) header {
+        position: relative !important;
+        width: auto !important;
+        height: auto !important;
+        top: auto !important;
+        left: auto !important;
+        padding: 0 !important;
+        background: transparent !important;
+        border-bottom: none !important;
+        z-index: 1 !important;
+    }
+</style>
+
+<style>
     /* ==========================================================================
-       RESUME PAGE UNIQUE STYLING (LIGHT TEMPLATE BY DEFAULT FOR MAXIMUM CRAWL)
+       ARCHITECTURAL STRUCTURED RESUME SYSTEM
        ========================================================================== */
 
     .resume-main-container {
-        padding: 120px 0 80px 0;
-        background-color: var(--color-light-bg);
+        padding: 60px 0 100px 0;
+        background-color: #0c101b; /* Dark backdrop to match the premium theme */
         min-height: 100vh;
-        color: var(--color-text-dark);
-        font-family: var(--font-body);
+        color: #e2e8f0;
+        font-family: 'Inter', sans-serif;
+        position: relative;
     }
 
     .resume-wrapper {
-        max-width: 860px;
+        max-width: 1080px;
         margin: 0 auto;
         padding: 0 24px;
+        position: relative;
+        z-index: 2;
     }
 
     .resume-actions {
@@ -227,319 +296,461 @@ const projects = projectsData.items;
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        color: var(--color-ai-indigo);
+        color: #c5ff00; /* Neon Lime */
         font-weight: 700;
         text-decoration: none;
         font-size: 14px;
-        transition: var(--transition-smooth);
+        font-family: 'Space Grotesk', sans-serif;
+        transition: all 0.3s ease;
     }
 
     .resume-actions .back-link:hover {
         transform: translateX(-4px);
-        color: var(--color-ai-purple);
+        opacity: 0.8;
     }
 
     .resume-actions .print-btn {
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 700;
         padding: 10px 20px;
-        border-radius: var(--border-radius-sm);
-        border: 1px solid var(--color-light-border);
-        background: var(--color-light-card);
-        color: var(--color-text-dark);
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(18, 24, 38, 0.6);
+        color: #ffffff;
         cursor: pointer;
-        transition: var(--transition-smooth);
+        font-family: 'Space Grotesk', sans-serif;
+        transition: all 0.3s ease;
     }
 
     .resume-actions .print-btn:hover {
-        background-color: var(--color-accent);
-        border-color: var(--color-accent);
-        color: var(--color-text-dark) !important;
+        background-color: #c5ff00;
+        border-color: #c5ff00;
+        color: #0c101b;
         transform: translateY(-2px);
     }
 
+    /* Resume Sheet - Main White Architectural Drawing Sheet */
     .resume-sheet {
-        background: var(--color-light-card);
-        border: 1px solid var(--color-light-border);
-        border-radius: var(--border-radius-md);
-        padding: 48px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+        background: #ffffff;
+        color: #1e293b;
+        border-radius: 8px;
+        padding: 60px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        position: relative;
     }
 
-    .resume-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 32px;
-        flex-wrap: wrap;
+    /* Top Structural Header Block */
+    .resume-header-block {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 40px;
+        border-bottom: 2px solid #0f172a;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
     }
 
-    .resume-header h1 {
-        font-family: var(--font-heading);
-        font-size: clamp(32px, 5vw, 42px);
+    .header-main-info h1 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 38px;
         font-weight: 900;
-        letter-spacing: -1px;
-        text-transform: uppercase;
-        color: var(--color-text-dark);
-        line-height: 1.1;
-        margin-bottom: 6px;
+        letter-spacing: -1.5px;
+        line-height: 1.0;
+        margin: 0 0 6px 0;
+        color: #0f172a;
     }
 
     .title-tag {
-        font-size: 18px;
-        font-weight: 800;
-        color: var(--color-ai-indigo);
-        margin-bottom: 12px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #4f46e5; /* AI Blue/Indigo */
+        letter-spacing: 1px;
         text-transform: uppercase;
-        letter-spacing: 0.5px;
+        margin-bottom: 16px;
     }
 
     .summary-meta {
-        font-size: 14px;
-        color: var(--color-text-muted-dark);
+        font-size: 13px;
+        color: #64748b;
+        line-height: 1.5;
         font-weight: 500;
-        max-width: 440px;
-        line-height: 1.4;
+        max-width: 480px;
+    }
+
+    .header-contact-info {
+        border-left: 1px solid #e2e8f0;
+        padding-left: 40px;
     }
 
     .contact-list {
         list-style: none;
         padding: 0;
         margin: 0;
-        font-size: 14px;
-        color: var(--color-text-muted-dark);
+        font-size: 12px;
+        font-family: monospace;
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 6px;
     }
 
     .contact-list li {
-        display: flex;
-        align-items: center;
-        gap: 10px;
+        color: #334155;
     }
 
-    .contact-list i {
-        color: var(--color-ai-indigo);
-        width: 16px;
-        text-align: center;
+    .contact-list .label {
+        font-weight: bold;
+        color: #64748b;
+        display: inline-block;
+        width: 75px;
     }
 
     .contact-list a {
-        color: inherit;
+        color: #0f172a;
         text-decoration: none;
-        border-bottom: 1px dashed var(--color-light-border);
-        transition: var(--transition-smooth);
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease;
     }
 
     .contact-list a:hover {
-        color: var(--color-ai-indigo);
-        border-bottom-style: solid;
+        color: #4f46e5;
+        border-bottom-color: #4f46e5;
     }
 
-    .resume-divider {
-        border: none;
-        border-top: 1px solid var(--color-light-border);
-        margin: 32px 0;
-    }
-
-    .resume-section h2 {
-        font-family: var(--font-heading);
-        font-size: 20px;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        color: var(--color-text-dark);
-        margin-bottom: 18px;
-        position: relative;
-    }
-
-    .summary-text {
-        font-size: 15px;
-        line-height: 1.7;
-        color: var(--color-text-muted-dark);
-    }
-
-    /* Skills Grid */
-    .skills-grid {
+    /* Architectural Two-Column Grid */
+    .architectural-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 24px;
+        grid-template-columns: 280px 1fr;
+        gap: 50px;
     }
 
-    .skills-category h3 {
-        font-family: var(--font-body);
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: var(--color-text-dark);
-        margin-bottom: 10px;
+    /* Sidebar Column */
+    .resume-sidebar {
+        border-right: 1px solid #e2e8f0;
+        padding-right: 40px;
+    }
+
+    .sidebar-section {
+        margin-bottom: 35px;
+    }
+
+    .sidebar-section:last-child {
+        margin-bottom: 0;
+    }
+
+    .section-label {
+        font-family: monospace;
+        font-size: 11px;
+        font-weight: bold;
+        color: #64748b;
+        letter-spacing: 1px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid #e2e8f0;
+        padding-bottom: 4px;
+    }
+
+    /* Blueprint Quote Box */
+    .blueprint-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-left: 3px solid #0f172a;
+        padding: 16px;
+        border-radius: 4px;
+    }
+
+    .blueprint-text {
+        font-size: 11.5px;
+        line-height: 1.6;
+        color: #475569;
+        margin: 0;
+    }
+
+    .skills-sub-group {
+        margin-bottom: 18px;
+    }
+
+    .skills-sub-group h4 {
+        font-family: monospace;
+        font-size: 10px;
+        color: #94a3b8;
+        margin-bottom: 8px;
         letter-spacing: 0.5px;
     }
 
     .skill-tags {
         display: flex;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 5px;
     }
 
     .skill-tags .tag {
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 600;
-        background-color: rgba(99, 102, 241, 0.04);
-        border: 1px solid rgba(99, 102, 241, 0.12);
-        color: var(--color-ai-indigo);
-        padding: 4px 10px;
-        border-radius: var(--border-radius-sm);
+        background: #f1f5f9;
+        border: 1px solid #e2e8f0;
+        color: #334155;
+        padding: 3px 8px;
+        border-radius: 3px;
     }
 
-    /* Experience Items */
-    .experience-item {
-        margin-bottom: 28px;
-    }
-
-    .experience-item:last-child {
-        margin-bottom: 0;
-    }
-
-    .exp-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 8px;
-    }
-
-    .exp-title-company h3 {
-        font-family: var(--font-heading);
-        font-size: 16px;
-        font-weight: 800;
-        color: var(--color-text-dark);
-        display: inline-block;
-        margin-right: 8px;
-    }
-
-    .exp-title-company .company {
-        font-size: 14px;
-        font-weight: 700;
-        color: var(--color-ai-indigo);
-        background: rgba(99, 102, 241, 0.05);
-        padding: 2px 8px;
-        border-radius: 4px;
-    }
-
-    .exp-header .date {
+    .sidebar-edu-item h4 {
         font-size: 13px;
-        font-weight: 600;
-        color: var(--color-text-muted-dark);
-    }
-
-    .exp-desc {
-        font-size: 14px;
-        color: var(--color-text-muted-dark);
-        line-height: 1.6;
-        margin-bottom: 12px;
-    }
-
-    .bullet-list {
-        padding-left: 20px;
-        font-size: 14px;
-        color: var(--color-text-muted-dark);
-        line-height: 1.6;
-    }
-
-    .bullet-list li {
-        margin-bottom: 6px;
-    }
-
-    .bullet-list li strong {
-        color: var(--color-text-dark);
-    }
-
-    /* Education Items */
-    .edu-item {
-        margin-bottom: 16px;
-    }
-
-    .edu-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 8px;
+        font-weight: bold;
+        color: #0f172a;
         margin-bottom: 4px;
+        line-height: 1.3;
     }
 
-    .edu-header h3 {
-        font-family: var(--font-heading);
-        font-size: 15px;
-        font-weight: 800;
-        color: var(--color-text-dark);
+    .sub-detail {
+        font-size: 11.5px;
+        color: #64748b;
+        line-height: 1.4;
     }
 
-    .edu-header .date {
-        font-size: 13px;
-        font-weight: 600;
-        color: var(--color-text-muted-dark);
-    }
-
-    .school {
-        font-size: 14px;
-        color: var(--color-text-muted-dark);
-    }
-
-    /* Horizontal Bullet List */
-    .bullet-list-horizontal {
+    .sidebar-lang-list {
         list-style: none;
         padding: 0;
         margin: 0;
+        font-size: 11.5px;
+        color: #475569;
+        line-height: 1.6;
+    }
+
+    /* Main Column */
+    .resume-main-content {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 35px;
+    }
+
+    .content-block {
+        position: relative;
+    }
+
+    .summary-text {
         font-size: 14px;
-        color: var(--color-text-muted-dark);
+        line-height: 1.7;
+        color: #334155;
+        margin: 0;
     }
 
-    .bullet-list-horizontal li strong {
-        color: var(--color-text-dark);
+    .text-highlight {
+        font-size: 14.5px;
+        color: #0f172a;
+        line-height: 1.75;
     }
 
-    /* Mobile adjustments */
-    @media (max-width: 600px) {
+    /* Job blocks */
+    .job-block {
+        margin-bottom: 24px;
+    }
+
+    .job-block:last-child {
+        margin-bottom: 0;
+    }
+
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        margin-bottom: 6px;
+    }
+
+    .job-title-company h3 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        color: #0f172a;
+        display: inline-block;
+        margin: 0 8px 0 0;
+    }
+
+    .job-title-company .company {
+        font-size: 12px;
+        font-weight: bold;
+        color: #4f46e5;
+        background: #e0e7ff;
+        padding: 2px 8px;
+        border-radius: 3px;
+        vertical-align: middle;
+    }
+
+    .job-date {
+        font-family: monospace;
+        font-size: 12px;
+        font-weight: bold;
+        color: #64748b;
+    }
+
+    .job-desc {
+        font-size: 13px;
+        color: #475569;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .job-bullets {
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .job-bullets li {
+        font-size: 13px;
+        color: #334155;
+        line-height: 1.6;
+        margin-bottom: 6px;
+        position: relative;
+        padding-left: 18px;
+    }
+
+    .job-bullets li::before {
+        content: "▪";
+        color: #4f46e5;
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 12px;
+    }
+
+    .job-bullets li strong {
+        color: #0f172a;
+    }
+
+    /* Products Grid */
+    .products-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .product-card {
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        padding: 16px;
+        background: #f8fafc;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+        border-color: #cbd5e1;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    }
+
+    .prod-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+
+    .prod-header h4 {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 13.5px;
+        font-weight: bold;
+        color: #0f172a;
+        margin: 0;
+    }
+
+    .prod-date {
+        font-family: monospace;
+        font-size: 10.5px;
+        background: #e2e8f0;
+        color: #475569;
+        padding: 1px 6px;
+        border-radius: 3px;
+        font-weight: bold;
+    }
+
+    .prod-desc {
+        font-size: 12px;
+        color: #64748b;
+        line-height: 1.5;
+        margin-bottom: 12px;
+        flex-grow: 1;
+    }
+
+    .prod-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #e2e8f0;
+        padding-top: 8px;
+        margin-top: auto;
+    }
+
+    .prod-tech {
+        font-size: 10px;
+        font-family: monospace;
+        color: #64748b;
+    }
+
+    .prod-metric {
+        font-size: 10px;
+        font-family: monospace;
+        font-weight: bold;
+        color: #4f46e5;
+    }
+
+    /* Screen Responsiveness */
+    @media (max-width: 900px) {
         .resume-sheet {
-            padding: 24px;
+            padding: 30px;
         }
-        .resume-header {
-            flex-direction: column;
-            gap: 16px;
+
+        .resume-header-block {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
         }
-        .exp-header {
-            flex-direction: column;
-            gap: 4px;
+
+        .header-contact-info {
+            border-left: none;
+            padding-left: 0;
+        }
+
+        .architectural-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .resume-sidebar {
+            border-right: none;
+            padding-right: 0;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .products-grid {
+            grid-template-columns: 1fr;
         }
     }
 
     /* ==========================================================================
-       CSS @MEDIA PRINT STYLING (ATS-FRIENDLY PDF RENDER)
+       ATS-COMPATIBLE AND RULER-PERFECT PRINT STYLING
        ========================================================================== */
 
     @media print {
         @page {
-            margin: 15mm 15mm 15mm 15mm;
+            margin: 15mm;
             size: A4 portrait;
         }
 
         body, .resume-main-container {
-            background-color: #ffffff !important;
+            background: #ffffff !important;
             color: #000000 !important;
             padding: 0 !important;
             margin: 0 !important;
             min-height: 0 !important;
             font-size: 10pt !important;
-            line-height: 1.4 !important;
+            line-height: 1.35 !important;
         }
 
         .no-print {
@@ -560,149 +771,187 @@ const projects = projectsData.items;
             box-shadow: none !important;
         }
 
-        .resume-header {
+        .resume-header-block {
             display: grid !important;
-            grid-template-columns: 1fr auto !important;
+            grid-template-columns: 1.3fr 0.7fr !important;
             gap: 20px !important;
-            align-items: start !important;
+            border-bottom: 1.5pt solid #000000 !important;
+            padding-bottom: 12pt !important;
+            margin-bottom: 20pt !important;
         }
 
-        .resume-header h1 {
+        .header-main-info h1 {
             color: #000000 !important;
-            font-size: 26pt !important;
+            font-size: 24pt !important;
             margin-bottom: 2pt !important;
         }
 
         .title-tag {
+            color: #000000 !important;
+            font-size: 11pt !important;
+            margin-bottom: 6pt !important;
+        }
+
+        .summary-meta {
+            font-size: 8.5pt !important;
             color: #4b5563 !important;
-            font-size: 12pt !important;
-            font-weight: bold !important;
-            margin-bottom: 4pt !important;
+        }
+
+        .header-contact-info {
+            border-left: 1px solid #cbd5e1 !important;
+            padding-left: 20px !important;
         }
 
         .contact-list {
-            font-size: 9pt !important;
-            color: #111827 !important;
-            gap: 3pt !important;
-            align-items: end !important;
+            font-size: 8pt !important;
+            gap: 2pt !important;
         }
 
-        .contact-list i {
-            display: none !important; /* Hide icons in print for clean look */
+        .contact-list .label {
+            width: 60px !important;
+            color: #4b5563 !important;
         }
 
         .contact-list a {
             color: #000000 !important;
-            text-decoration: none !important;
             border-bottom: none !important;
         }
 
-        .resume-divider {
-            border-top: 1px solid #d1d5db !important;
-            margin: 12pt 0 !important;
+        .architectural-grid {
+            grid-template-columns: 200px 1fr !important;
+            gap: 30px !important;
         }
 
-        .resume-section h2 {
-            font-size: 12pt !important;
+        .resume-sidebar {
+            border-right: 1px solid #cbd5e1 !important;
+            padding-right: 20px !important;
+        }
+
+        .sidebar-section {
+            margin-bottom: 20pt !important;
+        }
+
+        .section-label {
+            font-size: 8.5pt !important;
             color: #000000 !important;
-            margin-bottom: 8pt !important;
-            border-bottom: 1px solid #e5e7eb !important;
-            padding-bottom: 2pt !important;
+            border-bottom: 1px solid #94a3b8 !important;
+            margin-bottom: 10pt !important;
         }
 
-        .summary-text {
-            font-size: 9.5pt !important;
+        .blueprint-card {
+            background: none !important;
+            border: 1px solid #cbd5e1 !important;
+            border-left: 2pt solid #000000 !important;
+            padding: 8pt !important;
+        }
+
+        .blueprint-text {
+            font-size: 8pt !important;
             color: #374151 !important;
-        }
-
-        .skills-grid {
-            grid-template-columns: 1fr 1fr !important;
-            gap: 12pt !important;
-        }
-
-        .skills-category h3 {
-            font-size: 9pt !important;
-            color: #111827 !important;
-            margin-bottom: 4pt !important;
         }
 
         .skill-tags .tag {
-            font-size: 8pt !important;
+            font-size: 7.5pt !important;
             background: none !important;
-            border: 1px solid #d1d5db !important;
-            color: #111827 !important;
-            padding: 1pt 5pt !important;
-            margin-bottom: 2pt !important;
-            border-radius: 2px !important;
+            border: 1px solid #cbd5e1 !important;
+            color: #000000 !important;
+            padding: 1pt 4pt !important;
         }
 
-        .experience-item {
-            margin-bottom: 12pt !important;
+        .sidebar-edu-item h4 {
+            font-size: 9.5pt !important;
+        }
+
+        .sub-detail {
+            font-size: 8pt !important;
+        }
+
+        .sidebar-lang-list {
+            font-size: 8pt !important;
+        }
+
+        .resume-main-content {
+            gap: 20pt !important;
+        }
+
+        .text-highlight {
+            font-size: 9.5pt !important;
+            color: #000000 !important;
+        }
+
+        .job-block {
+            margin-bottom: 15pt !important;
             page-break-inside: avoid !important;
         }
 
-        .exp-header {
-            margin-bottom: 3pt !important;
+        .job-title-company h3 {
+            font-size: 11pt !important;
         }
 
-        .exp-title-company h3 {
-            font-size: 10pt !important;
-            color: #000000 !important;
-        }
-
-        .exp-title-company .company {
-            font-size: 9.5pt !important;
+        .job-title-company .company {
+            font-size: 8.5pt !important;
             background: none !important;
-            color: #374151 !important;
-            font-weight: bold !important;
-            padding: 0 !important;
+            border: 1px solid #000000 !important;
+            color: #000000 !important;
+            padding: 1px 4px !important;
         }
 
-        .exp-header .date {
+        .job-date {
             font-size: 9pt !important;
-            color: #4b5563 !important;
-        }
-
-        .exp-desc {
-            font-size: 9pt !important;
-            color: #4b5563 !important;
-            margin-bottom: 4pt !important;
-        }
-
-        .bullet-list {
-            font-size: 9.2pt !important;
             color: #374151 !important;
         }
 
-        .bullet-list li {
+        .job-desc {
+            font-size: 8.5pt !important;
+        }
+
+        .job-bullets li {
+            font-size: 8.5pt !important;
             margin-bottom: 3pt !important;
+            padding-left: 12pt !important;
         }
 
-        .bullet-list li strong {
+        .job-bullets li::before {
+            content: "•" !important;
             color: #000000 !important;
         }
 
-        .edu-header h3 {
-            font-size: 10pt !important;
-            color: #000000 !important;
+        .products-grid {
+            grid-template-columns: 1fr 1fr !important;
+            gap: 10pt !important;
+            page-break-inside: avoid !important;
         }
 
-        .edu-header .date {
-            font-size: 9pt !important;
-            color: #4b5563 !important;
+        .product-card {
+            background: none !important;
+            border: 1px solid #cbd5e1 !important;
+            padding: 10pt !important;
         }
 
-        .school {
-            font-size: 9pt !important;
-            color: #374151 !important;
-        }
-
-        .bullet-list-horizontal {
+        .prod-header h4 {
             font-size: 9.5pt !important;
-            color: #374151 !important;
         }
 
-        .bullet-list-horizontal li strong {
+        .prod-date {
+            background: none !important;
+            border: 1px solid #cbd5e1 !important;
+            font-size: 7.5pt !important;
+        }
+
+        .prod-desc {
+            font-size: 8pt !important;
+        }
+
+        .prod-meta {
+            border-top: 1px solid #cbd5e1 !important;
+        }
+
+        .prod-tech {
+            font-size: 7.5pt !important;
+        }
+
+        .prod-metric {
+            font-size: 7.5pt !important;
             color: #000000 !important;
         }
     }
