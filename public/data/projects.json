@@ -1,6 +1,35 @@
 {
   "items": [
     {
+      "shortDescription": "High-converting corporate landing page for Eka Konstruksi. Combining modern structural aesthetics with fluid GSAP animations.",
+      "deliveryTime": "Built in 3 days",
+      "method": "AI-Augmented Creative Co-Creation",
+      "metrics": {
+        "m1_key": "Development Speed",
+        "m1_val": "3 Days Ideation to Launch",
+        "m2_key": "Animation Performance",
+        "m2_val": "Fluid GSAP Transitions",
+        "m3_key": "Adaptive Design",
+        "m3_val": "Responsive Project Filtering"
+      },
+      "liveUrl": "#",
+      "completionDate": "August 2026",
+      "githubUrl": "#",
+      "techStack": [
+        "Astro",
+        "GSAP Animations",
+        "Tailwind CSS",
+        "Figma Design"
+      ],
+      "categoryLabel": "Landing Page",
+      "title": "Eka Konstruksi: Premium Civil & Wood Finishing Landing Page",
+      "id": "eka-konstruksi",
+      "image": "/assets/uploads/eka-konstruksi-landingpage.jpg",
+      "description": "A high-converting corporate landing page designed and built for Eka Konstruksi, a premier civil contractor and premium wood finishing company based in Bali. The platform merges structural, architectural design aesthetics with fluid, interactive animations powered by GSAP. It features an advanced multi-category portfolio filtering system and touch-optimized slider lightboxes to showcase their luxury villa construction and high-end timber craftsmanship projects seamlessly across all devices.",
+      "result": "Launched a highly optimized, responsive company profile landing page that drastically improved visual credibility and streamlined luxury client inquiries.",
+      "category": "web-saas"
+    },
+    {
       "shortDescription": "Interactive universe-based web novel platform featuring branching narratives, multi-ending choice mechanics, and transparent ethical monetization.",
       "deliveryTime": "Built in 25 days",
       "method": "AI-Augmented Content & Tech Co-Creation",
