@@ -143,7 +143,7 @@
       "categoryLabel": "Automation & Tools",
       "title": "Prolog: High-Performance Local-First Web Platform",
       "id": "prolog",
-      "image": "/assets/uploads/cover-prolog.png",
+      "image": "/assets/uploads/01.jpg",
       "description": "Prolog is a sophisticated web application engineered for speed and reliability, utilizing the latest React 19 ecosystem. The platform implements a \"local-first\" architecture using Dexie.js for lightning-fast IndexedDB operations, ensuring critical functionality remains available even without an active internet connection. It features real-time cloud synchronization backed by Supabase for secure, scalable state management, and an integrated PDF generation engine for immediate reporting. Optimized as a PWA, Prolog delivers an app-like experience directly within the browser, balancing heavy local data processing with efficient cloud syncing.",
       "result": "Successfully deployed as a high-performance web platform, offering enterprise-grade offline reliability and seamless cross-device synchronization",
       "category": "automation"
